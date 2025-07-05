@@ -3,85 +3,11 @@ import { Calendar, MapPin, Square, Eye, ExternalLink } from 'lucide-react';
 import Container from '../ui/Container';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
+import {projects} from '../../utils/constants'
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [visibleProjects, setVisibleProjects] = useState(6);
-
-  const projects = [
-    {
-      id: 1,
-      title: 'Modern Office Complex',
-      category: 'Commercial',
-      description: 'A state-of-the-art office building with sustainable design features and modern amenities.',
-      image: '/images/project-1.jpg',
-      completionDate: '2024',
-      size: '50,000 sq ft',
-      location: 'Riyadh, Saudi Arabia',
-      status: 'Completed',
-      tags: ['Sustainable', 'Modern', 'LEED Certified']
-    },
-    {
-      id: 2,
-      title: 'Luxury Residential Villa',
-      category: 'Residential',
-      description: 'Custom-built luxury home featuring contemporary architecture and premium finishes.',
-      image: '/images/project-2.jpg',
-      completionDate: '2023',
-      size: '8,500 sq ft',
-      location: 'Jeddah, Saudi Arabia',
-      status: 'Completed',
-      tags: ['Luxury', 'Custom', 'Contemporary']
-    },
-    {
-      id: 3,
-      title: 'Shopping Center Renovation',
-      category: 'Commercial',
-      description: 'Complete renovation of existing shopping center with modern retail spaces.',
-      image: '/images/project-3.jpg',
-      completionDate: '2023',
-      size: '75,000 sq ft',
-      location: 'Dammam, Saudi Arabia',
-      status: 'Completed',
-      tags: ['Renovation', 'Retail', 'Modern']
-    },
-    {
-      id: 4,
-      title: 'Industrial Warehouse',
-      category: 'Industrial',
-      description: 'Large-scale warehouse facility with advanced logistics and storage solutions.',
-      image: '/images/project-4.jpg',
-      completionDate: '2024',
-      size: '120,000 sq ft',
-      location: 'Riyadh, Saudi Arabia',
-      status: 'Completed',
-      tags: ['Logistics', 'Storage', 'Large-scale']
-    },
-    {
-      id: 5,
-      title: 'Residential Complex',
-      category: 'Residential',
-      description: 'Multi-family residential development with modern amenities and green spaces.',
-      image: '/images/project-5.jpg',
-      completionDate: '2023',
-      size: '200 units',
-      location: 'Mecca, Saudi Arabia',
-      status: 'Completed',
-      tags: ['Multi-family', 'Green Spaces', 'Amenities']
-    },
-    {
-      id: 6,
-      title: 'Healthcare Facility',
-      category: 'Healthcare',
-      description: 'Medical center with specialized equipment installations and patient-focused design.',
-      image: '/images/project-6.jpg',
-      completionDate: '2024',
-      size: '30,000 sq ft',
-      location: 'Riyadh, Saudi Arabia',
-      status: 'Completed',
-      tags: ['Medical', 'Specialized', 'Patient-focused']
-    }
-  ];
 
   const categories = ['All', ...new Set(projects.map(project => project.category))];
 
@@ -181,8 +107,24 @@ const Projects = () => {
                     </button>
                   </div>
 
-                  {/* Placeholder Image */}
-                  <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center text-gray-500">
+                  {/* Project Image */}
+                  {project.image ? (
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                  ) : null}
+                  
+                  {/* Fallback Placeholder */}
+                  <div 
+                    className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center text-gray-500"
+                    style={{ display: project.image ? 'none' : 'flex' }}
+                  >
                     <div className="text-center">
                       <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white/20 rounded-full flex items-center justify-center mb-2 mx-auto">
                         <Square className="w-8 h-8 sm:w-10 sm:h-10" />

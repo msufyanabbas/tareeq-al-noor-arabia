@@ -57,24 +57,24 @@ export default function ContactPage() {
                 {
                   icon: '📞',
                   title: 'Phone',
-                  primary: '+1 (555) 123-4567',
+                  primary: '+966 54 802 9209',
                   secondary: 'Mon-Fri 8AM-6PM',
                   action: 'Call Now',
-                  href: 'tel:+15551234567'
+                  href: 'tel:+966 54 802 9209'
                 },
                 {
                   icon: '✉️',
                   title: 'Email',
-                  primary: 'info@tareeqalnoor.com',
+                  primary: 'info@tareeqalnur.com',
                   secondary: 'Response within 24 hours',
                   action: 'Send Email',
-                  href: 'mailto:info@tareeqalnoor.com'
+                  href: 'mailto:info@tareeqalnur.com'
                 },
                 {
                   icon: '📍',
                   title: 'Office',
                   primary: '123 Construction Ave',
-                  secondary: 'Riyadh, Saudi Arabia',
+                  secondary: 'Jeddah, Saudi Arabia',
                   action: 'Get Directions',
                   href: '#map'
                 }
@@ -114,36 +114,66 @@ export default function ContactPage() {
         </section>
 
         {/* Map Section */}
-        <section id="map" className="py-16 sm:py-20 lg:py-24 bg-white">
-          <Container>
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-                Visit Our <span className="text-blue-600">Office</span>
-              </h2>
-              <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-                Stop by our office to discuss your project in person or schedule a site visit. We're conveniently located in the heart of Riyadh.
-              </p>
-            </div>
+       /* Map Section */
+<section id="map" className="py-16 sm:py-20 lg:py-24 bg-white">
+  <Container>
+    <div className="text-center mb-12 sm:mb-16">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+        Visit Our <span className="text-blue-600">Office</span>
+      </h2>
+      <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+        Stop by our office to discuss your project in person or schedule a site visit. We're conveniently located in the heart of Jeddah.
+      </p>
+    </div>
 
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 flex items-center justify-center text-gray-600 relative group cursor-pointer">
-                <div className="text-center z-10">
-                  <div className="text-5xl sm:text-6xl lg:text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">🗺️</div>
-                  <p className="text-lg sm:text-xl lg:text-2xl font-semibold mb-2">Interactive Map</p>
-                  <p className="text-sm sm:text-base text-gray-500">Click to view directions</p>
-                </div>
-                
-                {/* Overlay with office details */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-lg p-6 text-center">
-                    <h3 className="font-bold text-gray-900 mb-2">Tareeq Al Noor Al Arabia Construction</h3>
-                    <p className="text-gray-600 text-sm">123 Construction Ave, Riyadh, Saudi Arabia</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Container>
-        </section>
+    <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+      <div className="aspect-video relative">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.4905345513744!2d46.68532797429982!3d24.713488745934375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f030894b2ca0b%3A0x4d7d6e4a2e0aa3e7!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1673123456789!5m2!1sen!2s"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="absolute inset-0"
+        />
+      </div>
+      
+      {/* Office Information Card */}
+      <div className="p-6 sm:p-8 bg-gradient-to-r from-blue-50 to-blue-100">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+              Tareeq Al Noor Al Arabia Construction
+            </h3>
+            <p className="text-gray-600 mb-1">123 Construction Ave</p>
+            <p className="text-gray-600 mb-4">Jeddah, Saudi Arabia</p>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+            <a
+              href="https://www.google.com/maps/dir//Jeddah+Saudi+Arabia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 text-sm sm:text-base"
+            >
+              <span className="mr-2">🗺️</span>
+              Get Directions
+            </a>
+            <a
+              href="tel:+15551234567"
+              className="inline-flex items-center justify-center px-4 py-2 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-200 text-sm sm:text-base"
+            >
+              <span className="mr-2">📞</span>
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>
 
         {/* FAQ Section */}
         <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
@@ -224,7 +254,7 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {[
-                { area: 'Riyadh Central', icon: '🏙️', description: 'Downtown & Business District' },
+                { area: 'Jeddah Central', icon: '🏙️', description: 'Downtown & Business District' },
                 { area: 'Northern Districts', icon: '🏘️', description: 'Residential Communities' },
                 { area: 'Eastern Province', icon: '🏭', description: 'Industrial & Commercial' },
                 { area: 'Western Region', icon: '🏡', description: 'Suburban Neighborhoods' },

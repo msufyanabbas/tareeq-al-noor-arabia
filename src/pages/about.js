@@ -20,26 +20,30 @@ export default function AboutPage() {
       
       <main className={isRTL ? 'rtl' : 'ltr'}>
         {/* Page Header */}
-        <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white py-16 sm:py-20 lg:py-24 overflow-hidden">
+        <Container.Section 
+          spacing="lg" 
+          background="transparent"
+          className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white overflow-hidden"
+        >
           {/* Background Pattern */}
           <div className="absolute inset-0 bg-black opacity-10"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
           
-          <Container>
-            <div className="relative z-10 text-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
-                {t('aboutTitle')}
+          <Container size="lg" className="relative z-10">
+            <Container.Stack spacing="sm" align="center">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-center">
+                {t('aboutPageTitle')}
               </h1>
-              <p className="text-base sm:text-lg lg:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
+              <p className="text-base sm:text-lg lg:text-xl text-blue-100 max-w-2xl text-center leading-relaxed">
                 {t('aboutPageSubtitle')}
               </p>
-            </div>
+            </Container.Stack>
           </Container>
           
           {/* Decorative Elements */}
           <div className={`absolute top-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 ${isRTL ? 'right-0 translate-x-16' : 'left-0 -translate-x-16'}`}></div>
           <div className={`absolute bottom-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 ${isRTL ? 'left-0 -translate-x-24' : 'right-0 translate-x-24'}`}></div>
-        </section>
+        </Container.Section>
 
         <About />
 
