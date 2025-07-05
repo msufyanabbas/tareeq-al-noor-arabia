@@ -1,0 +1,71 @@
+{
+  "home": "Home",
+  "about": "About",
+  "services": "Services",
+  "projects": "Projects",
+  "contact": "Contact",
+
+  "getQuote": "Get Quote",
+  "available247": "24/7 Available",
+  "toggleMenu": "Toggle menu",
+
+  "learnMore": "Learn More",
+  "readMore": "Read More",
+  "viewAll": "View All",
+  "contactUs": "Contact Us",
+  "callNow": "Call Now",
+  "viewOurWork": "View Our Work",
+
+  "heroTitle": "Building Dreams, Creating Futures",
+  "heroSubtitle": "Professional construction services for residential and commercial projects with quality craftsmanship and reliable service.",
+
+  "aboutTitle": "About Us",
+  "aboutPageTitle": "About Us - Tareeq Al Noor Al Arabia Construction",
+  "aboutPageDescription": "Learn about Tareeq Al Noor Al Arabia Construction's history, mission, and commitment to excellence in construction services.",
+  "aboutPageSubtitle": "Building excellence since 2008, one project at a time",
+  "aboutSubtitle": "Years of experience in construction excellence",
+
+  "teamTitle": "Our Leadership Team",
+  "teamDescription": "Meet the experienced professionals who lead our construction projects and ensure quality delivery every time.",
+  "teamMember1Name": "Ahmed Al-Mansouri",
+  "teamMember1Role": "CEO & Founder",
+  "teamMember1Experience": "20+ years",
+  "teamMember1Description": "Licensed general contractor with expertise in commercial and residential construction.",
+  "teamMember2Name": "Sarah Mohammed",
+  "teamMember2Role": "Project Manager",
+  "teamMember2Experience": "15+ years",
+  "teamMember2Description": "Specializes in large-scale commercial projects and client relationship management.",
+  "teamMember3Name": "Khalid Al-Ahmad",
+  "teamMember3Role": "Lead Contractor",
+  "teamMember3Experience": "18+ years",
+  "teamMember3Description": "Expert in residential construction and renovation projects with attention to detail.",
+
+  "valuesTitle": "Our Values",
+  "valuesDescription": "These core values guide every decision we make and every project we undertake.",
+  "valueQuality": "Quality",
+  "valueQualityDescription": "We never compromise on quality, ensuring every project meets the highest standards.",
+  "valueIntegrity": "Integrity",
+  "valueIntegrityDescription": "Honest communication and transparent business practices in all our dealings.",
+  "valueInnovation": "Innovation",
+  "valueInnovationDescription": "Embracing new technologies and methods to deliver better construction solutions.",
+  "valueSafety": "Safety",
+  "valueSafetyDescription": "Prioritizing the safety of our workers, clients, and communities in every project.",
+
+  "ctaTitle": "Ready to Start Your Project?",
+  "ctaDescription": "Let's discuss how we can bring your construction vision to life with our expertise and commitment to excellence.",
+
+  "servicesTitle": "Our Services",
+  "servicesSubtitle": "Complete construction solutions for all your needs",
+
+  "projectsTitle": "Our Projects",
+  "projectsSubtitle": "Showcasing our finest work",
+
+  "contactTitle": "Get In Touch",
+  "contactSubtitle": "Ready to start your project? Contact us today",
+
+  "footerDescription": "Professional construction services with quality craftsmanship, reliable service, and competitive pricing.",
+  "quickLinks": "Quick Links",
+  "ourServices": "Our Services",
+  "followUs": "Follow Us",
+  "allRightsReserved": "All rights reserved."
+}
