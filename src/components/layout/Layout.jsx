@@ -2,7 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import WhatsAppButton from '../ui/WhatsAppButton';
+import WhatsAppButton from '../ui/WhatsappButton';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 const Layout = ({ children }) => {
