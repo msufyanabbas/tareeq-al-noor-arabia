@@ -4,7 +4,7 @@ export const COMPANY_INFO = {
   phone: '+966 54 802 9209',
   secondaryPhone: '+966 54 802 9209',
   email: 'info@tareeqalnur.com',
-  projectsEmail: 'projects@Tareeq Al Noor Al Arabia.sa',
+  projectsEmail: 'projects@tariqalnuralarabia.com',
     address: {
     street: "123 Construction Street",
     city: "Jeddah",

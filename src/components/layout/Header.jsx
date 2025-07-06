@@ -86,167 +86,54 @@ const Header = () => {
       <div className="relative w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-20 md:h-24 lg:h-28">
           
-          {/* Logo Section - Enhanced with SVG */}
+          {/* Logo Section - Enhanced with PNG */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center group">
               <div className="relative flex items-center justify-center transition-all duration-500 flex-shrink-0 hover:scale-105 group-hover:drop-shadow-2xl">
-                {/* SVG Logo Container */}
+                {/* PNG Logo Container */}
                 <div className={`relative transition-all duration-500 ${
                   isScrolled 
-                    ? 'w-48 h-16 md:w-56 md:h-20 lg:w-64 lg:h-24' 
-                    : 'w-52 h-18 md:w-60 md:h-22 lg:w-72 lg:h-28'
+                    ? 'w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24' 
+                    : 'w-18 h-18 md:w-22 md:h-22 lg:w-28 lg:h-28'
                 }`}>
-                  <svg 
-                    viewBox="0 0 400 180" 
-                    className="w-full h-full object-contain drop-shadow-2xl filter brightness-110 contrast-110 group-hover:brightness-125 transition-all duration-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <defs>
-                      {/* Enhanced gradients for better visibility */}
-                      <linearGradient id="lanternGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style={{stopColor: isScrolled ? '#6B7280' : '#9CA3AF', stopOpacity: 1}} />
-                        <stop offset="50%" style={{stopColor: isScrolled ? '#374151' : '#6B7280', stopOpacity: 1}} />
-                        <stop offset="100%" style={{stopColor: isScrolled ? '#1F2937' : '#374151', stopOpacity: 1}} />
-                      </linearGradient>
-                      
-                      <radialGradient id="lightGlow" cx="50%" cy="50%" r="50%">
-                        <stop offset="0%" style={{stopColor: '#FDE047', stopOpacity: 0.9}} />
-                        <stop offset="100%" style={{stopColor: '#FDE047', stopOpacity: 0.3}} />
-                      </radialGradient>
-                      
-                      <filter id="dropshadow" x="-50%" y="-50%" width="200%" height="200%">
-                        <feDropShadow dx="1" dy="2" stdDeviation="3" floodColor="#000000" floodOpacity="0.6"/>
-                      </filter>
-                      
-                      {/* Text gradient for better visibility */}
-                      <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style={{stopColor: isScrolled ? '#F9FAFB' : '#FFFFFF', stopOpacity: 1}} />
-                        <stop offset="50%" style={{stopColor: isScrolled ? '#FFFFFF' : '#F3F4F6', stopOpacity: 1}} />
-                        <stop offset="100%" style={{stopColor: isScrolled ? '#F9FAFB' : '#FFFFFF', stopOpacity: 1}} />
-                      </linearGradient>
-                    </defs>
-                    
-                    {/* Top curved text "TAREEQ AL NUR AL ARABIC" */}
-                    <defs>
-                      <path id="topArc" d="M 30 40 Q 200 10 370 40" stroke="none" fill="none"/>
-                    </defs>
-                    
-                    <text 
-                      fontFamily="Madisonian BC, serif" 
-                      fontSize="16" 
-                      fontWeight="bold" 
-                      fill="url(#textGradient)" 
-                      letterSpacing="1.5px"
-                      filter="url(#dropshadow)"
-                    >
-                      <textPath href="#topArc" startOffset="50%" textAnchor="middle">
-                        TAREEQ AL NUR AL ARABIC
-                      </textPath>
-                    </text>
-                    
-                    {/* Central lantern arrangement */}
-                    <g transform="translate(200, 100)">
-                      
-                      {/* Left lantern */}
-                      <g transform="translate(-50, 0)">
-                        <ellipse cx="0" cy="-28" rx="8" ry="4" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
-                        <rect x="-1" y="-32" width="2" height="8" fill="url(#lanternGradient)"/>
-                        <rect x="-8" y="-24" width="16" height="24" fill="url(#lanternGradient)" rx="2" filter="url(#dropshadow)"/>
-                        <rect x="-6" y="-22" width="5" height="8" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <rect x="1" y="-22" width="5" height="8" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <rect x="-6" y="-12" width="5" height="8" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <rect x="1" y="-12" width="5" height="8" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <ellipse cx="0" cy="2" rx="9" ry="3" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
-                        <rect x="-0.5" y="-38" width="1" height="14" fill="url(#lanternGradient)"/>
-                        <circle cx="0" cy="-39" r="1.5" fill="url(#lanternGradient)"/>
-                      </g>
-                      
-                      {/* Center lantern (larger) */}
-                      <g transform="translate(0, -8)">
-                        <ellipse cx="0" cy="-30" rx="10" ry="5" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
-                        <rect x="-1" y="-35" width="2" height="10" fill="url(#lanternGradient)"/>
-                        <rect x="-10" y="-25" width="20" height="30" fill="url(#lanternGradient)" rx="3" filter="url(#dropshadow)"/>
-                        <rect x="-8" y="-23" width="6" height="10" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <rect x="2" y="-23" width="6" height="10" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <rect x="-8" y="-11" width="6" height="10" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <rect x="2" y="-11" width="6" height="10" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <ellipse cx="0" cy="7" rx="11" ry="4" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
-                        <rect x="-0.5" y="-42" width="1" height="17" fill="url(#lanternGradient)"/>
-                        <circle cx="0" cy="-43" r="1.5" fill="url(#lanternGradient)"/>
-                      </g>
-                      
-                      {/* Right lantern */}
-                      <g transform="translate(50, 0)">
-                        <ellipse cx="0" cy="-28" rx="8" ry="4" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
-                        <rect x="-1" y="-32" width="2" height="8" fill="url(#lanternGradient)"/>
-                        <rect x="-8" y="-24" width="16" height="24" fill="url(#lanternGradient)" rx="2" filter="url(#dropshadow)"/>
-                        <rect x="-6" y="-22" width="5" height="8" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <rect x="1" y="-22" width="5" height="8" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <rect x="-6" y="-12" width="5" height="8" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <rect x="1" y="-12" width="5" height="8" fill="rgba(253, 224, 71, 0.4)" rx="1"/>
-                        <ellipse cx="0" cy="2" rx="9" ry="3" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
-                        <rect x="-0.5" y="-38" width="1" height="14" fill="url(#lanternGradient)"/>
-                        <circle cx="0" cy="-39" r="1.5" fill="url(#lanternGradient)"/>
-                      </g>
-                      
-                      {/* Decorative elements */}
-                      <g transform="translate(-80, 0)" fill="url(#lanternGradient)" opacity="0.9">
-                        <path d="M 0 0 C -8 -8 -12 -4 -8 0 C -12 4 -8 8 0 0" />
-                        <path d="M -4 0 C -8 -4 -10 -2 -8 0 C -10 2 -8 4 -4 0" />
-                      </g>
-                      
-                      <g transform="translate(80, 0)" fill="url(#lanternGradient)" opacity="0.9">
-                        <path d="M 0 0 C 8 -8 12 -4 8 0 C 12 4 8 8 0 0" />
-                        <path d="M 4 0 C 8 -4 10 -2 8 0 C 10 2 8 4 4 0" />
-                      </g>
-                      
-                      {/* Enhanced decorative stars */}
-                      <g fill="url(#lanternGradient)" opacity="0.8">
-                        <g transform="translate(-25, -8)">
-                          <path d="M 0 -4 L 1 -1 L 4 0 L 1 1 L 0 4 L -1 1 L -4 0 L -1 -1 Z"/>
-                        </g>
-                        <g transform="translate(25, -8)">
-                          <path d="M 0 -4 L 1 -1 L 4 0 L 1 1 L 0 4 L -1 1 L -4 0 L -1 -1 Z"/>
-                        </g>
-                        <g transform="translate(-15, 8)">
-                          <path d="M 0 -2 L 0.5 -0.5 L 2 0 L 0.5 0.5 L 0 2 L -0.5 0.5 L -2 0 L -0.5 -0.5 Z"/>
-                        </g>
-                        <g transform="translate(15, 8)">
-                          <path d="M 0 -2 L 0.5 -0.5 L 2 0 L 0.5 0.5 L 0 2 L -0.5 0.5 L -2 0 L -0.5 -0.5 Z"/>
-                        </g>
-                      </g>
-                      
-                      {/* Crescent moon elements */}
-                      <g transform="translate(-35, 5)" fill="url(#lanternGradient)" opacity="0.7">
-                        <path d="M 0 -6 C 2 -3 2 3 0 6 C 4 3 4 -3 0 -6 Z"/>
-                      </g>
-                      <g transform="translate(35, 5)" fill="url(#lanternGradient)" opacity="0.7">
-                        <path d="M 0 -6 C -2 -3 -2 3 0 6 C -4 3 -4 -3 0 -6 Z"/>
-                      </g>
-                    </g>
-                    
-                    {/* Bottom tagline */}
-                    <text 
-                      x="200" 
-                      y="145" 
-                      fontFamily="Madisonian BC, serif" 
-                      fontSize="14" 
-                      fontWeight="600" 
-                      fill="url(#textGradient)" 
-                      textAnchor="middle" 
-                      letterSpacing="4px"
-                      filter="url(#dropshadow)"
-                    >
-                      BUILDING EXCELLENCE
-                    </text>
-                    
-                    {/* Enhanced decorative line */}
-                    <line x1="130" y1="155" x2="270" y2="155" stroke="url(#textGradient)" strokeWidth="1.5" opacity="0.7"/>
-                    <circle cx="200" cy="155" r="2.5" fill="url(#textGradient)" opacity="0.8"/>
-                  </svg>
+                  <img 
+                    src="/logo.png" 
+                    alt="Tariq AlNur AlArabi - طريق النور العربي" 
+                    className={`w-full h-full object-contain transition-all duration-500 ${
+                      isScrolled 
+                        ? 'filter brightness-110 contrast-110 drop-shadow-lg' 
+                        : 'filter brightness-125 contrast-125 drop-shadow-2xl'
+                    } group-hover:brightness-150 group-hover:scale-105`}
+                    onError={(e) => {
+                      // Fallback if image fails to load
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
                   
-                  {/* Subtle glow effect on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 via-amber-300/20 to-yellow-400/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700 -z-10"></div>
+                  {/* Fallback Logo Text (hidden by default) */}
+                  <div className="hidden w-full h-full items-center justify-center bg-gradient-to-br from-teal-600 to-teal-800 rounded-full text-white font-bold text-xs md:text-sm">
+                    <span className="text-center leading-tight">
+                      طريق النور<br />العربي
+                    </span>
+                  </div>
+                  
+                  {/* Enhanced glow effect on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-teal-400/20 via-teal-300/20 to-teal-400/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700 -z-10"></div>
+                </div>
+                
+                {/* Company Name Text (Optional - can be hidden on mobile) */}
+                <div className={`hidden md:flex flex-col ${isRTL ? 'mr-4' : 'ml-4'} transition-all duration-500`}>
+                  <span className={`${getHeadingClasses()} text-white font-bold text-lg lg:text-xl leading-tight ${
+                    isScrolled ? 'opacity-90' : 'opacity-100'
+                  }`}>
+                    {isRTL ? 'طريق النور العربي' : 'Tariq Al Nur Al Arabi'}
+                  </span>
+                  <span className={`${getTextClasses()} text-white/80 text-xs lg:text-sm leading-tight ${
+                    isScrolled ? 'opacity-80' : 'opacity-90'
+                  }`}>
+                    {isRTL ? 'بناء التميز' : 'Building Excellence'}
+                  </span>
                 </div>
               </div>
             </Link>
@@ -277,7 +164,7 @@ const Header = () => {
                     {isActive && (
                       <>
                         <div className="absolute inset-0 bg-white/20 rounded-full blur-sm -z-10"></div>
-                        <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-amber-300/20 rounded-full blur-md -z-20"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-teal-400/20 to-teal-300/20 rounded-full blur-md -z-20"></div>
                       </>
                     )}
                     {/* Hover effect */}
@@ -389,7 +276,7 @@ const Header = () => {
                           {item.name}
                         </span>
                         {isActive && (
-                          <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-amber-300 rounded-full shadow-lg"></div>
+                          <div className="w-3 h-3 bg-gradient-to-r from-teal-400 to-teal-300 rounded-full shadow-lg"></div>
                         )}
                       </div>
                     </Link>
