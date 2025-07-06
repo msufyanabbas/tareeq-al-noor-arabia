@@ -12,9 +12,9 @@ const LanguageSwitcher = ({ showText = true, className = '' }) => {
       className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-100 ${className}`}
       aria-label={`Switch to ${language === 'en' ? 'Arabic' : 'English'}`}
     >
-      <Globe className="w-4 h-4 text-gray-600" />
+      <Globe className="w-4 h-4 text-white" />
       {showText && (
-        <span className="text-sm font-medium text-gray-700">
+        <span className="text-sm font-medium text-white">
           {language === 'en' ? 'العربية' : 'English'}
         </span>
       )}

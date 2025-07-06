@@ -119,5 +119,29 @@
   "footer.sections.contact.title": "Contact Info",
   "footer.social.phone": "Phone",
   "footer.social.email": "Email",
-  "footer.social.location": "Location"
+  "footer.social.location": "Location",
+   "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "company": {
+    "name": "Tareeq Al Noor Al Arabic Company",
+    "tagline": "Building Excellence Since 1985",
+    "phone": "+966 11 123 4567"
+  },
+  "header": {
+    "available247": "Available 24/7",
+    "getQuote": "Get Free Quote",
+    "quote": "Quote",
+    "call": "Call",
+    "toggleMenu": "Toggle navigation menu"
+  },
+  "common": {
+    "language": "Language",
+    "english": "English",
+    "arabic": "العربية"
+  }
 }

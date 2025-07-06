@@ -33,7 +33,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
-        arabic: ['Amiri', 'serif'],
+        arabic: ['Tajawal', 'serif'],
       },
       animation: {
         'fade-in-up': 'fadeInUp 0.6s ease-out',

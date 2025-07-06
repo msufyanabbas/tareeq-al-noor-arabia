@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tareeq Al Noor Al ArabiaConstruction - Professional Construction Services</title>
+        <title>Tareeq Al Noor Al Arabia Company - Professional Construction Services</title>
         <meta name="description" content="Professional construction services for residential and commercial projects. Quality craftsmanship, reliable service, and competitive pricing." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

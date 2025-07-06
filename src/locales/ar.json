@@ -166,5 +166,29 @@
     "location": "الموقع",
     "status": "الحالة",
     "projectFeatures": "مميزات المشروع",
-    "getSimilarQuote": "احصل على عرض سعر مماثل"
+    "getSimilarQuote": "احصل على عرض سعر مماثل",
+    "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "الخدمات",
+    "projects": "المشاريع",
+    "contact": "تواصل معنا"
+  },
+  "company": {
+    "name": "شركة طريق النور العربي",
+    "tagline": "نبني التميز منذ عام ۱۹۸۵",
+    "phone": "+۹۶۶ ۱۱ ۱۲۳ ۴۵۶۷"
+  },
+  "header": {
+    "available247": "متاح ۲۴/۷",
+    "getQuote": "احصل على عرض مجاني",
+    "quote": "عرض سعر",
+    "call": "اتصل",
+    "toggleMenu": "تبديل قائمة التنقل"
+  },
+  "common": {
+    "language": "اللغة",
+    "english": "English",
+    "arabic": "العربية"
+  }
 }

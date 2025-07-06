@@ -5,24 +5,62 @@ import { useLanguage } from '../contexts/LanguageContext';
 import enTranslations from '../locales/en.json';
 import arTranslations from '../locales/ar.json';
 
-// Translation files
 const translations = {
   en: enTranslations,
   ar: arTranslations
 };
 
 export const useTranslation = () => {
-  const { language } = useLanguage();
-  
+  const { currentLanguage } = useLanguage();
+
   const t = (key) => {
-    return translations[language][key] || key;
+    const keys = key.split('.');
+    let translation = translations[currentLanguage];
+    
+    for (const k of keys) {
+      if (translation && typeof translation === 'object' && k in translation) {
+        translation = translation[k];
+      } else {
+        // Fallback to English if key not found
+        translation = translations.en;
+        for (const fallbackKey of keys) {
+          if (translation && typeof translation === 'object' && fallbackKey in translation) {
+            translation = translation[fallbackKey];
+          } else {
+            return key; // Return key itself if not found
+          }
+        }
+        break;
+      }
+    }
+    
+    return translation || key;
   };
-  
+
   return { t };
 };
 
-export const translate = (key, language = 'en') => {
-  return translations[language][key] || key;
+// Helper function to get translation without hook (for use in non-component contexts)
+export const getTranslation = (key, language = 'en') => {
+  const keys = key.split('.');
+  let translation = translations[language];
+  
+  for (const k of keys) {
+    if (translation && typeof translation === 'object' && k in translation) {
+      translation = translation[k];
+    } else {
+      // Fallback to English if key not found
+      translation = translations.en;
+      for (const fallbackKey of keys) {
+        if (translation && typeof translation === 'object' && fallbackKey in translation) {
+          translation = translation[fallbackKey];
+        } else {
+          return key; // Return key itself if not found
+        }
+      }
+      break;
+    }
+  }
+  
+  return translation || key;
 };
-
-export default translations;
