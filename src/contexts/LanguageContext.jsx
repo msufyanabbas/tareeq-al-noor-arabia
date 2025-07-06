@@ -12,44 +12,55 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en');
+  const [currentLanguage, setCurrentLanguage] = useState('en');
   const [isRTL, setIsRTL] = useState(false);
 
-  // Load language from localStorage on mount
+  // RTL languages list
+  const rtlLanguages = ['ar', 'he', 'fa', 'ur'];
+
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('language');
+    // Check if current language is RTL
+    const isCurrentRTL = rtlLanguages.includes(currentLanguage);
+    setIsRTL(isCurrentRTL);
+    
+    // Set document direction and lang attributes
+    document.documentElement.setAttribute('dir', isCurrentRTL ? 'rtl' : 'ltr');
+    document.documentElement.setAttribute('lang', currentLanguage);
+    
+    // Add RTL class to body for additional styling if needed
+    if (isCurrentRTL) {
+      document.body.classList.add('rtl');
+      document.body.classList.remove('ltr');
+    } else {
+      document.body.classList.add('ltr');
+      document.body.classList.remove('rtl');
+    }
+  }, [currentLanguage]);
+
+  // Load saved language from localStorage on mount
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('preferred-language');
     if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'ar')) {
-      setLanguage(savedLanguage);
-      setIsRTL(savedLanguage === 'ar');
+      setCurrentLanguage(savedLanguage);
     }
   }, []);
 
-  // Update document direction when language changes
-  useEffect(() => {
-    document.documentElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
-    document.documentElement.setAttribute('lang', language);
-  }, [language, isRTL]);
-
-  const toggleLanguage = () => {
-    const newLanguage = language === 'en' ? 'ar' : 'en';
-    setLanguage(newLanguage);
-    setIsRTL(newLanguage === 'ar');
-    localStorage.setItem('language', newLanguage);
+  const switchLanguage = (language) => {
+    setCurrentLanguage(language);
+    localStorage.setItem('preferred-language', language);
   };
 
-  const switchToLanguage = (lang) => {
-    if (lang === 'en' || lang === 'ar') {
-      setLanguage(lang);
-      setIsRTL(lang === 'ar');
-      localStorage.setItem('language', lang);
-    }
+  const toggleLanguage = () => {
+    const newLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+    switchLanguage(newLanguage);
   };
 
   const value = {
-    language,
+    currentLanguage,
     isRTL,
+    switchLanguage,
     toggleLanguage,
-    switchToLanguage,
+    rtlLanguages
   };
 
   return (

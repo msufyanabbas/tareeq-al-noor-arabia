@@ -1,0 +1,156 @@
+<svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for lanterns -->
+    <linearGradient id="lanternGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1F2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Light gradient for lantern glow -->
+    <radialGradient id="lightGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FDE047;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FDE047;stop-opacity:0.2" />
+    </radialGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropshadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Top curved text "TAREEQ AL NUR AL ARABIC" -->
+  <defs>
+    <path id="topArc" d="M 30 40 Q 200 10 370 40" stroke="none" fill="none"/>
+  </defs>
+  
+  <text font-family="Madisonian BC, serif" font-size="16" font-weight="bold" fill="#1F2937" letter-spacing="1.5px">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+      TAREEQ AL NUR AL ARABIC
+    </textPath>
+  </text>
+  
+  <!-- Central lantern arrangement -->
+  <g transform="translate(200, 100)">
+    
+    <!-- Left lantern -->
+    <g transform="translate(-50, 0)">
+      <!-- Lantern top dome -->
+      <ellipse cx="0" cy="-28" rx="8" ry="4" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
+      <rect x="-1" y="-32" width="2" height="8" fill="#1F2937"/>
+      
+      <!-- Main lantern body -->
+      <rect x="-8" y="-24" width="16" height="24" fill="url(#lanternGradient)" rx="2" filter="url(#dropshadow)"/>
+      
+      <!-- Lantern panels/windows -->
+      <rect x="-6" y="-22" width="5" height="8" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      <rect x="1" y="-22" width="5" height="8" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      <rect x="-6" y="-12" width="5" height="8" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      <rect x="1" y="-12" width="5" height="8" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      
+      <!-- Lantern bottom -->
+      <ellipse cx="0" cy="2" rx="9" ry="3" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
+      
+      <!-- Decorative chain -->
+      <rect x="-0.5" y="-38" width="1" height="14" fill="#374151"/>
+      <circle cx="0" cy="-39" r="1.5" fill="#374151"/>
+    </g>
+    
+    <!-- Center lantern (larger) -->
+    <g transform="translate(0, -8)">
+      <!-- Lantern top dome -->
+      <ellipse cx="0" cy="-30" rx="10" ry="5" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
+      <rect x="-1" y="-35" width="2" height="10" fill="#1F2937"/>
+      
+      <!-- Main lantern body -->
+      <rect x="-10" y="-25" width="20" height="30" fill="url(#lanternGradient)" rx="3" filter="url(#dropshadow)"/>
+      
+      <!-- Lantern panels/windows -->
+      <rect x="-8" y="-23" width="6" height="10" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      <rect x="2" y="-23" width="6" height="10" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      <rect x="-8" y="-11" width="6" height="10" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      <rect x="2" y="-11" width="6" height="10" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      
+      <!-- Lantern bottom -->
+      <ellipse cx="0" cy="7" rx="11" ry="4" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
+      
+      <!-- Decorative chain -->
+      <rect x="-0.5" y="-42" width="1" height="17" fill="#374151"/>
+      <circle cx="0" cy="-43" r="1.5" fill="#374151"/>
+    </g>
+    
+    <!-- Right lantern -->
+    <g transform="translate(50, 0)">
+      <!-- Lantern top dome -->
+      <ellipse cx="0" cy="-28" rx="8" ry="4" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
+      <rect x="-1" y="-32" width="2" height="8" fill="#1F2937"/>
+      
+      <!-- Main lantern body -->
+      <rect x="-8" y="-24" width="16" height="24" fill="url(#lanternGradient)" rx="2" filter="url(#dropshadow)"/>
+      
+      <!-- Lantern panels/windows -->
+      <rect x="-6" y="-22" width="5" height="8" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      <rect x="1" y="-22" width="5" height="8" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      <rect x="-6" y="-12" width="5" height="8" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      <rect x="1" y="-12" width="5" height="8" fill="rgba(253, 224, 71, 0.3)" rx="1"/>
+      
+      <!-- Lantern bottom -->
+      <ellipse cx="0" cy="2" rx="9" ry="3" fill="url(#lanternGradient)" filter="url(#dropshadow)"/>
+      
+      <!-- Decorative chain -->
+      <rect x="-0.5" y="-38" width="1" height="14" fill="#374151"/>
+      <circle cx="0" cy="-39" r="1.5" fill="#374151"/>
+    </g>
+    
+    <!-- Decorative elements -->
+    <!-- Left decorative flourish -->
+    <g transform="translate(-80, 0)" fill="#374151" opacity="0.8">
+      <path d="M 0 0 C -8 -8 -12 -4 -8 0 C -12 4 -8 8 0 0" />
+      <path d="M -4 0 C -8 -4 -10 -2 -8 0 C -10 2 -8 4 -4 0" />
+    </g>
+    
+    <!-- Right decorative flourish -->
+    <g transform="translate(80, 0)" fill="#374151" opacity="0.8">
+      <path d="M 0 0 C 8 -8 12 -4 8 0 C 12 4 8 8 0 0" />
+      <path d="M 4 0 C 8 -4 10 -2 8 0 C 10 2 8 4 4 0" />
+    </g>
+    
+    <!-- Decorative stars -->
+    <g fill="#374151" opacity="0.7">
+      <!-- Left star -->
+      <g transform="translate(-25, -8)">
+        <path d="M 0 -4 L 1 -1 L 4 0 L 1 1 L 0 4 L -1 1 L -4 0 L -1 -1 Z"/>
+      </g>
+      
+      <!-- Right star -->
+      <g transform="translate(25, -8)">
+        <path d="M 0 -4 L 1 -1 L 4 0 L 1 1 L 0 4 L -1 1 L -4 0 L -1 -1 Z"/>
+      </g>
+      
+      <!-- Small accent stars -->
+      <g transform="translate(-15, 8)">
+        <path d="M 0 -2 L 0.5 -0.5 L 2 0 L 0.5 0.5 L 0 2 L -0.5 0.5 L -2 0 L -0.5 -0.5 Z"/>
+      </g>
+      <g transform="translate(15, 8)">
+        <path d="M 0 -2 L 0.5 -0.5 L 2 0 L 0.5 0.5 L 0 2 L -0.5 0.5 L -2 0 L -0.5 -0.5 Z"/>
+      </g>
+    </g>
+    
+    <!-- Crescent moon elements -->
+    <g transform="translate(-35, 5)" fill="#374151" opacity="0.6">
+      <path d="M 0 -6 C 2 -3 2 3 0 6 C 4 3 4 -3 0 -6 Z"/>
+    </g>
+    <g transform="translate(35, 5)" fill="#374151" opacity="0.6">
+      <path d="M 0 -6 C -2 -3 -2 3 0 6 C -4 3 -4 -3 0 -6 Z"/>
+    </g>
+  </g>
+  
+  <!-- Bottom tagline -->
+  <text x="200" y="145" font-family="Madisonian BC, serif" font-size="14" font-weight="600" fill="#1F2937" text-anchor="middle" letter-spacing="4px">
+    BUILDING EXCELLENCE
+  </text>
+  
+  <!-- Decorative line under tagline -->
+  <line x1="130" y1="155" x2="270" y2="155" stroke="#9CA3AF" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="200" cy="155" r="2.5" fill="#374151" opacity="0.7"/>
+</svg>
