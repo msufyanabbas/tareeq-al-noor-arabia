@@ -1,9 +1,14 @@
 {
   "home": "Home",
   "about": "About",
-  "services": "Services",
+  "servicesPage": "Services",
   "projects": "Projects",
   "contact": "Contact",
+  "emergency": {
+    "title": "Emergency Services",
+    "description": "For construction emergencies, call our 24/7 emergency hotline:",
+    "phoneNumber": "+966 54 802 9209 HELP"
+  },
   "getQuote": "Get Quote",
   "available247": "24/7 Available",
   "toggleMenu": "Toggle menu",
@@ -120,7 +125,10 @@
   "footer.social.phone": "Phone",
   "footer.social.email": "Email",
   "footer.social.location": "Location",
-   "nav": {
+  "projectNumber": "500+",
+  "numberOfYears": "15+",
+  "numberOfRating": "5.0+",
+  "nav": {
     "home": "Home",
     "about": "About",
     "services": "Services",
@@ -130,7 +138,9 @@
   "company": {
     "name": "Tareeq Al Noor Al Arabic Company",
     "tagline": "Building Excellence Since 1985",
-    "phone": "+966 11 123 4567"
+    "phone": "+966 11 123 4567",
+    "city": "Jeddah",
+    "country": "Saudi Arabia"
   },
   "header": {
     "available247": "Available 24/7",
@@ -143,5 +153,268 @@
     "language": "Language",
     "english": "English",
     "arabic": "العربية"
+  },
+  "hero": {
+    "trustBadge": "Premium Construction Services",
+    "mainTitle": "Building the",
+    "futureText": "Future",
+    "subtitle": "One Project at a Time",
+    "description": "Your premier destination for comprehensive construction solutions in Jeddah. From industrial kitchens to complete building materials - we deliver excellence.",
+    "ctaGetStarted": "Get Started Today",
+    "ctaContact": "Contact Us",
+    "stats": {
+      "projectsDone": "Projects Done",
+      "yearsExperience": "Years Experience",
+      "satisfaction": "Satisfaction"
+    },
+    "serviceQuality": "Service Quality",
+    "serviceProgress": "Service Progress",
+    "features": {
+      "premiumQuality": "Premium Quality",
+      "fastDelivery": "Fast Delivery",
+      "support247": "24/7 Support"
+    },
+    "exploreMore": "Explore More",
+    "services": {
+      "kitchenFab": {
+        "title": "Stainless Steel Kitchen Fabrication",
+        "subtitle": "Home, Commercial & Industrial Solutions",
+        "description": "Premium quality stainless steel kitchens designed for durability and hygiene standards"
+      },
+      "aluminiumGlass": {
+        "title": "Aluminium & Glass Work",
+        "subtitle": "Structure, Cladding, Windows & Doors",
+        "description": "Complete aluminium solutions including structures, cladding, and office installations"
+      },
+      "ironFab": {
+        "title": "Iron Shade & Fabrication",
+        "subtitle": "Custom Hangers & Structural Work",
+        "description": "Robust iron fabrication for shades, hangers, and structural components"
+      },
+      "woodWork": {
+        "title": "Wood Materials & Work",
+        "subtitle": "Premium Carpentry Solutions",
+        "description": "High-quality wood materials and expert craftsmanship for all your needs"
+      },
+      "hvac": {
+        "title": "HVAC Complete Work",
+        "subtitle": "Exhaust & AC Duct Systems",
+        "description": "Comprehensive HVAC solutions for optimal climate control and air quality"
+      },
+      "electrical": {
+        "title": "Electrical Low Voltage",
+        "subtitle": "Professional Electrical Solutions",
+        "description": "Safe and efficient electrical installations for all your power needs"
+      },
+      "gypsum": {
+        "title": "Gypsum Work",
+        "subtitle": "Interior Finishing Excellence",
+        "description": "Professional gypsum board installation and finishing services"
+      },
+      "tilesEpoxy": {
+        "title": "Tiles & Epoxy Work",
+        "subtitle": "Flooring & Surface Solutions",
+        "description": "Premium tiles installation and durable epoxy flooring applications"
+      },
+      "waterproofing": {
+        "title": "Water & Heat Proofing",
+        "subtitle": "Protection & Insulation",
+        "description": "Complete waterproofing and thermal insulation solutions"
+      },
+      "materials": {
+        "title": "Building Materials & Tools",
+        "subtitle": "Complete Construction Solutions",
+        "description": "One-stop shop for all building materials and professional power tools"
+      }
+    }
+  },
+  "services": {
+    "badge": "Professional Services",
+    "title": "Our Expertise",
+    "subtitle": "Premium Construction Solutions",
+    "description": "Comprehensive construction and fabrication services delivered with excellence and precision across Saudi Arabia",
+    "stats": {
+      "services": "Services",
+      "projects": "Projects",
+      "years": "Years"
+    },
+    "items": {
+      "kitchen": {
+        "title": "Stainless Steel Kitchen Fabrication",
+        "subtitle": "Home, Commercial & Industrial Solutions",
+        "description": "Premium quality stainless steel kitchens designed for durability and hygiene standards",
+        "features": [
+          "Food Grade Materials",
+          "Custom Design",
+          "Easy Maintenance",
+          "Lifetime Warranty"
+        ]
+      },
+      "aluminum": {
+        "title": "Aluminium & Glass Work",
+        "subtitle": "Structure, Cladding, Windows & Doors",
+        "description": "Complete aluminium solutions including structures, cladding, and office installations",
+        "features": [
+          "Modern Designs",
+          "Energy Efficient",
+          "Weather Resistant",
+          "Professional Install"
+        ]
+      },
+      "iron": {
+        "title": "Iron Shade & Fabrication",
+        "subtitle": "Custom Hangers & Structural Work",
+        "description": "Robust iron fabrication for shades, hangers, and structural components",
+        "features": [
+          "Heavy Duty",
+          "Corrosion Resistant",
+          "Custom Shapes",
+          "Quick Installation"
+        ]
+      },
+      "wood": {
+        "title": "Wood Materials & Work",
+        "subtitle": "Premium Carpentry Solutions",
+        "description": "High-quality wood materials and expert craftsmanship for all your needs",
+        "features": [
+          "Premium Wood",
+          "Expert Craftsmanship",
+          "Custom Furniture",
+          "Eco-Friendly"
+        ]
+      },
+      "hvac": {
+        "title": "HVAC Complete Work",
+        "subtitle": "Exhaust & AC Duct Systems",
+        "description": "Comprehensive HVAC solutions for optimal climate control and air quality",
+        "features": [
+          "Energy Efficient",
+          "Smart Controls",
+          "Regular Maintenance",
+          "24/7 Support"
+        ]
+      },
+      "electrical": {
+        "title": "Electrical Low Voltage",
+        "subtitle": "Professional Electrical Solutions",
+        "description": "Safe and efficient electrical installations for all your power needs",
+        "features": [
+          "Safety First",
+          "Code Compliant",
+          "Modern Systems",
+          "Emergency Service"
+        ]
+      },
+      "gypsum": {
+        "title": "Gypsum Work",
+        "subtitle": "Interior Finishing Excellence",
+        "description": "Professional gypsum board installation and finishing services",
+        "features": [
+          "Smooth Finish",
+          "Fire Resistant",
+          "Sound Insulation",
+          "Quick Dry"
+        ]
+      },
+      "tiles": {
+        "title": "Tiles & Epoxy Work",
+        "subtitle": "Flooring & Surface Solutions",
+        "description": "Premium tiles installation and durable epoxy flooring applications",
+        "features": [
+          "Slip Resistant",
+          "Easy Clean",
+          "Durable Finish",
+          "Color Options"
+        ]
+      },
+      "waterproofing": {
+        "title": "Water & Heat Proofing",
+        "subtitle": "Protection & Insulation",
+        "description": "Complete waterproofing and thermal insulation solutions",
+        "features": [
+          "100% Waterproof",
+          "Energy Saving",
+          "Long Lasting",
+          "Professional Grade"
+        ]
+      },
+      "materials": {
+        "title": "Building Materials & Tools",
+        "subtitle": "Complete Construction Solutions",
+        "description": "One-stop shop for all building materials and professional power tools",
+        "features": [
+          "Quality Materials",
+          "Competitive Prices",
+          "Fast Delivery",
+          "Expert Advice"
+        ]
+      }
+    },
+    "quality": "Quality",
+    "learnMore": "Learn More",
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Our team of experts is here to help bring your vision to life with premium construction solutions.",
+      "getQuote": "Get Free Quote",
+      "viewPortfolio": "View Portfolio"
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "We are a leading construction and engineering company dedicated to building excellence through innovation, quality, and reliability. Our team of experts delivers world-class solutions for residential, commercial, and industrial projects.",
+      "copyright": "© {currentYear} {companyName}. All rights reserved.",
+      "subtitle": "Built with passion and precision"
+    },
+    "sections": {
+      "services": {
+        "title": "Our Services"
+      },
+      "contact": {
+        "title": "Get In Touch"
+      },
+      "quickLinks": {
+        "title": "Quick Links"
+      },
+      "legal": {
+        "title": "Legal"
+      }
+    },
+    "newsletter": {
+      "badge": "Stay Updated",
+      "title": "Ready to Build Excellence?",
+      "description": "Get the latest updates on our projects, exclusive offers, and industry insights delivered to your inbox.",
+      "placeholder": "Enter your email address",
+      "button": "Subscribe"
+    },
+    "contact": {
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "businessHours": "Business Hours",
+      "support247": "24/7 Support"
+    },
+    "stats": {
+      "projects": "Projects",
+      "years": "Years",
+      "rating": "Rating"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
+    "links": {
+      "about": "About Us",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "refund": "Refund Policy"
+    }
   }
 }

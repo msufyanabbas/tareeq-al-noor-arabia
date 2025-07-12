@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Phone, Mail, Clock, AlertTriangle, Send, CheckCircle, Star, Users, Shield, Award, TrendingUp } from 'lucide-react';
+import { useTranslation } from '../../utils/i18n';
 
 // Mock company info for demonstration
 const COMPANY_INFO = {
@@ -187,6 +188,8 @@ const ContactForm = () => {
 // Main Contact Component with Hero styling
 const Contact = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const { t } = useTranslation();
+
 
   // Mouse tracking for parallax effect (from Hero)
   useEffect(() => {
@@ -371,12 +374,12 @@ const Contact = () => {
                   <div className="flex items-start space-x-4">
                     <AlertTriangle className="w-7 h-7 text-red-400 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-bold text-white mb-3 text-lg sm:text-xl">Emergency Services</h4>
+                      <h4 className="font-bold text-white mb-3 text-lg sm:text-xl">{t('emergency.title')}</h4>
                       <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                        For construction emergencies, call our 24/7 emergency hotline: 
+                        {t('emergency.description')} 
                         <br />
                         <a href="tel:+966555123HELP" className="font-bold text-red-400 hover:text-red-300 transition-colors text-lg">
-                          +966 54 802 9209 HELP
+                          {t('emergency.phoneNumber')}
                         </a>
                       </p>
                     </div>
