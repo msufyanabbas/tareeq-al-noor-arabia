@@ -7,8 +7,8 @@ export default function Document() {
       <Head>
         <meta name="description" content="Professional construction services for residential and commercial projects. Quality craftsmanship, reliable service, and competitive pricing." />
         <meta name="keywords" content="construction, building, renovation, remodeling, contractor, residential, commercial" />
-        <meta name="author" content="Tareeq Al Noor Al Arabia Construction" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="author" content="Tareeq Al Noor Al Arabi Construction" />
+        <link rel="icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link 

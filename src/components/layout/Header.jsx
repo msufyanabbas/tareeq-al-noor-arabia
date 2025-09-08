@@ -1,8 +1,8 @@
 // src/components/layout/Header.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Menu, X, Phone, ArrowRight, Globe, ChevronDown, Sparkles } from 'lucide-react';
+import { Menu, X, Phone, ArrowRight, Globe, ChevronDown, Sparkles, ShoppingBag } from 'lucide-react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
@@ -13,9 +13,11 @@ import { COMPANY_INFO, NAVIGATION_ITEMS } from '../../utils/constants';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const router = useRouter();
   const { isRTL, currentLanguage } = useLanguage();
   const { t } = useTranslation();
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +30,7 @@ const Header = () => {
   // Close mobile menu when route changes
   useEffect(() => {
     setIsMenuOpen(false);
+    setActiveDropdown(null);
   }, [router.pathname]);
 
   // Function to check if a navigation item is active
@@ -44,17 +47,37 @@ const Header = () => {
       if (isMenuOpen && !event.target.closest('nav')) {
         setIsMenuOpen(false);
       }
+      if (activeDropdown && !event.target.closest('.dropdown-container')) {
+        setActiveDropdown(null);
+      }
     };
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
-  }, [isMenuOpen]);
+  }, [isMenuOpen, activeDropdown]);
+
+  // Project submenu items
+  const projectSubItems = [
+    { name: t('nav.projectTypes.residential'), href: '/projects/residential' },
+    { name: t('nav.projectTypes.commercial'), href: '/projects/commercial' },
+    { name: t('nav.projectTypes.industrial'), href: '/projects/industrial' },
+    { name: t('nav.projectTypes.infrastructure'), href: '/projects/infrastructure' },
+    { name: t('nav.projectTypes.ongoing'), href: '/projects/ongoing' },
+    { name: t('nav.projectTypes.completed'), href: '/projects/completed' },
+  ];
 
   // Navigation items with translations
   const navigationItems = [
     { name: t('nav.home'), href: '/' },
     { name: t('nav.about'), href: '/about' },
     { name: t('nav.services'), href: '/services' },
-    { name: t('nav.projects'), href: '/projects' },
+    { 
+      name: t('nav.projects'), 
+      href: '/projects', 
+      hasDropdown: true,
+      subItems: projectSubItems
+    },
+    { name: t('nav.products'), href: '/products' },
+    { name: t('nav.careers'), href: '/careers' },
     { name: t('nav.contact'), href: '/contact' },
   ];
 
@@ -73,37 +96,39 @@ const Header = () => {
     return `${baseClasses} ${additionalClasses}`;
   };
 
+  // Handle dropdown toggle
+  const handleDropdownToggle = (itemName, event) => {
+    event.preventDefault();
+    setActiveDropdown(activeDropdown === itemName ? null : itemName);
+  };
+
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
+      className={`fixed top-0 text-white left-0 right-0 z-50 transition-all duration-700 ${
         isScrolled 
-          ? 'bg-black/90 backdrop-blur-md shadow-2xl border-b border-white/10' 
-          : 'bg-transparent'
+          ? 'bg-[#035678] text-white shadow-xl border-b border-[#eaae07]' 
+          : 'bg-[#035678] text-white backdrop-blur-md'
       }`}
       dir={isRTL ? 'rtl' : 'ltr'}
     >
       {/* Main header content */}
       <div className="relative w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav className="flex items-center justify-between h-20 md:h-24 lg:h-28">
+        <nav className="flex items-center justify-between h-16 md:h-20">
           
-          {/* Logo Section - Enhanced with PNG */}
+          {/* Logo Section - Keep Tariq Al Nur logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center group">
-              <div className="relative flex items-center justify-center transition-all duration-500 flex-shrink-0 hover:scale-105 group-hover:drop-shadow-2xl">
+              <div className="relative flex items-center justify-center transition-all duration-500 flex-shrink-0 hover:scale-105">
                 {/* PNG Logo Container */}
-                <div className={`relative transition-all duration-500 ${
+                <div className={`bg-white relative transition-all duration-500 ${
                   isScrolled 
-                    ? 'w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24' 
-                    : 'w-18 h-18 md:w-22 md:h-22 lg:w-28 lg:h-28'
+                    ? 'w-12 h-12 md:w-16 md:h-16' 
+                    : 'w-14 h-14 md:w-18 md:h-18'
                 }`}>
                   <img 
                     src="/logo.png" 
                     alt="Tariq AlNur AlArabi - طريق النور العربي" 
-                    className={`w-full h-full object-contain transition-all duration-500 ${
-                      isScrolled 
-                        ? 'filter brightness-110 contrast-110 drop-shadow-lg' 
-                        : 'filter brightness-125 contrast-125 drop-shadow-2xl'
-                    } group-hover:brightness-150 group-hover:scale-105`}
+                    className="w-full h-full object-contain transition-all duration-500 group-hover:scale-105"
                     onError={(e) => {
                       // Fallback if image fails to load
                       e.target.style.display = 'none';
@@ -112,132 +137,138 @@ const Header = () => {
                   />
                   
                   {/* Fallback Logo Text (hidden by default) */}
-                  <div className="hidden w-full h-full items-center justify-center bg-gradient-to-br from-teal-600 to-teal-800 rounded-full text-white font-bold text-xs md:text-sm">
+                  <div className="hidden w-full h-full items-center justify-center bg-gradient-to-br from-blue-600 to-blue-800 rounded-full text-white font-bold text-xs">
                     <span className="text-center leading-tight">
                       طريق النور<br />العربي
                     </span>
                   </div>
-                  
-                  {/* Enhanced glow effect on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-teal-400/20 via-teal-300/20 to-teal-400/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700 -z-10"></div>
-                </div>
-                
-                {/* Company Name Text (Optional - can be hidden on mobile) */}
-                <div className={`hidden md:flex flex-col ${isRTL ? 'mr-4' : 'ml-4'} transition-all duration-500`}>
-                  <span className={`${getHeadingClasses()} text-white font-bold text-lg lg:text-xl leading-tight ${
-                    isScrolled ? 'opacity-90' : 'opacity-100'
-                  }`}>
-                    {isRTL ? 'طريق النور العربي' : 'Tariq Al Nur Al Arabi'}
-                  </span>
-                  <span className={`${getTextClasses()} text-white/80 text-xs lg:text-sm leading-tight ${
-                    isScrolled ? 'opacity-80' : 'opacity-90'
-                  }`}>
-                    {isRTL ? 'بناء التميز' : 'Building Excellence'}
-                  </span>
                 </div>
               </div>
             </Link>
           </div>
 
-          {/* Desktop Navigation - Enhanced glass effect */}
+          {/* Desktop Navigation - Modern clean design */}
           <div className="hidden lg:flex items-center justify-center flex-1 px-8">
             <div className={`flex items-center ${
-              isScrolled ? 'bg-white/15 shadow-lg' : 'bg-white/10 shadow-2xl'
-            } backdrop-blur-xl rounded-full px-3 py-3 border border-white/20 ${
-              isRTL ? 'space-x-reverse space-x-1' : 'space-x-1'
-            } transition-all duration-500`}>
+              isRTL ? 'space-x-reverse space-x-8' : 'space-x-8'
+            }`}>
               {navigationItems.map((item, index) => {
                 const isActive = isActiveRoute(item.href);
                 return (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={`relative transition-all duration-500 py-3 px-6 rounded-full whitespace-nowrap text-sm font-medium group ${
-                      getTextClasses(isActive 
-                        ? 'text-white bg-white/25 backdrop-blur-sm shadow-lg scale-105' 
-                        : 'text-white/90 hover:text-white hover:bg-white/15 hover:scale-105'
-                      )
-                    } ${index === 0 ? 'ml-0' : ''}`}
-                  >
-                    {item.name}
-                    {/* Enhanced glow for active state */}
-                    {isActive && (
-                      <>
-                        <div className="absolute inset-0 bg-white/20 rounded-full blur-sm -z-10"></div>
-                        <div className="absolute inset-0 bg-gradient-to-r from-teal-400/20 to-teal-300/20 rounded-full blur-md -z-20"></div>
-                      </>
+                  <div key={item.name} className="relative group dropdown-container">
+                    {item.hasDropdown ? (
+                      <div className="relative">
+                        <button
+                          onClick={(e) => handleDropdownToggle(item.name, e)}
+                          className={`relative transition-all duration-300 py-2 px-1 text-sm font-medium flex items-center ${
+                            getTextClasses(isActive 
+                              ? 'text-white font-semibold' 
+                              : 'text-white hover:text-[#eaae07]'
+                            )
+                          }`}
+                        >
+                          {item.name}
+                          <ChevronDown className={`w-4 h-4 ${isRTL ? 'mr-1' : 'ml-1'} transition-transform duration-300 ${
+                            activeDropdown === item.name ? 'rotate-180' : 'rotate-0'
+                          }`} />
+                          
+                          {/* Active indicator */}
+                          {isActive && (
+                            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#eaae07] rounded-full"></div>
+                          )}
+                          
+                          {/* Hover indicator */}
+                          <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#eaae07] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </button>
+
+                        {/* Dropdown Menu */}
+                        {activeDropdown === item.name && (
+                          <div className={`absolute top-full ${isRTL ? 'right-0' : 'left-0'} mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50`}>
+                            {item.subItems?.map((subItem) => (
+                              <Link
+                                key={subItem.name}
+                                href={subItem.href}
+                                className={`block px-4 py-3 text-sm transition-colors duration-200 ${
+                                  getTextClasses(isActiveRoute(subItem.href)
+                                    ? 'text-[#035678] bg-blue-50 font-semibold'
+                                    : 'text-gray-700 hover:text-[#035678] hover:bg-gray-50'
+                                  )
+                                }`}
+                                onClick={() => setActiveDropdown(null)}
+                              >
+                                {subItem.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className={`relative transition-all duration-300 py-2 px-1 text-sm font-medium flex items-center ${
+                          getTextClasses(isActive 
+                            ? 'text-white font-semibold' 
+                            : 'text-white hover:text-[#eaae07]'
+                          )
+                        }`}
+                      >
+                        {item.name}
+                        
+                        {/* Active indicator */}
+                        {isActive && (
+                          <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#eaae07] rounded-full"></div>
+                        )}
+                        
+                        {/* Hover indicator */}
+                        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#eaae07] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </Link>
                     )}
-                    {/* Hover effect */}
-                    <div className="absolute inset-0 bg-white/10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 -z-10"></div>
-                  </Link>
+                  </div>
                 );
               })}
             </div>
           </div>
 
-          {/* Desktop Right Side - Enhanced design */}
+          {/* Desktop Right Side - Modern blue design */}
           <div className={`hidden lg:flex items-center flex-shrink-0 ${
             isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'
           }`}>
             {/* Language Switcher */}
-            <div className={`${
-              isScrolled ? 'bg-white/15 shadow-lg' : 'bg-white/10 shadow-2xl'
-            } backdrop-blur-xl rounded-full p-3 border border-white/20 transition-all duration-500 hover:bg-white/20`}>
+            <div className="flex items-center">
               <LanguageSwitcher />
             </div>
             
-            {/* Contact Info - Enhanced design */}
-            <div className={`hidden xl:flex items-center ${
-              isScrolled ? 'bg-white/15 shadow-lg' : 'bg-white/10 shadow-2xl'
-            } backdrop-blur-xl rounded-full px-5 py-3 border border-white/20 ${
-              isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'
-            } transition-all duration-500 hover:bg-white/20`}>
-              <div className="w-10 h-10 bg-gradient-to-br from-white/30 to-white/20 rounded-full flex items-center justify-center shadow-lg">
-                <Phone className="w-5 h-5 text-white" />
-              </div>
-              <div className="text-sm">
-                <div className={getTextClasses("text-white font-semibold")}>
-                  {t('company.phone')}
-                </div>
-                <p className={getTextClasses("text-xs text-white/80")}>
-                  {t('header.available247')}
-                </p>
-              </div>
-            </div>
-            
-            {/* CTA Button - Enhanced design */}
-            <Button 
-              size="sm" 
-              className={`whitespace-nowrap bg-gradient-to-r from-white/25 to-white/20 hover:from-white/35 hover:to-white/30 border border-white/30 hover:border-white/50 text-white backdrop-blur-xl transition-all duration-500 text-sm px-8 py-3 shadow-lg hover:shadow-xl hover:scale-105 ${
-                isRTL ? 'font-tajawal font-medium' : ''
-              } group`}
-            >
-              <span className="font-semibold">{t('header.quote')}</span>
-              <ArrowRight className={`w-4 h-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'} group-hover:translate-x-1 transition-transform duration-300`} />
-            </Button>
+            {/* Shopping Bag Icon */}
+            {/* <button className="relative p-2 text-white hover:text-[#eaae07] transition-colors duration-300">
+              <ShoppingBag className="w-5 h-5" />
+              <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#eaae07] text-[#035678] text-xs rounded-full flex items-center justify-center font-bold">
+                0
+              </span>
+            </button> */}
           </div>
 
-          {/* Mobile Menu Button - Enhanced glass effect */}
+          {/* Mobile Menu Button */}
           <div className={`lg:hidden flex items-center ${
             isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'
           } flex-shrink-0`}>
-            <div className={`${
-              isScrolled ? 'bg-white/15 shadow-lg' : 'bg-white/10 shadow-2xl'
-            } backdrop-blur-xl rounded-full p-3 border border-white/20 transition-all duration-500 hover:bg-white/20`}>
-              <LanguageSwitcher showText={false} />
-            </div>
+            {/* Mobile Shopping Bag */}
+            {/* <button className="relative p-2 text-white hover:text-[#eaae07] transition-colors duration-300">
+              <ShoppingBag className="w-5 h-5" />
+              <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#eaae07] text-[#035678] text-xs rounded-full flex items-center justify-center font-bold">
+                0
+              </span>
+            </button> */}
+            
             <button
-              className={`p-4 rounded-full ${
-                isScrolled ? 'bg-white/15 shadow-lg' : 'bg-white/10 shadow-2xl'
-              } backdrop-blur-xl border border-white/20 hover:bg-white/25 transition-all duration-500 flex-shrink-0 hover:scale-105`}
+              className="p-2 text-white hover:text-[#eaae07] transition-colors duration-300"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label={t('header.toggleMenu')}
             >
               <div className="relative w-6 h-6">
-                <Menu className={`w-6 h-6 absolute transition-all duration-300 text-white ${
+                <Menu className={`w-6 h-6 absolute transition-all duration-300 ${
                   isMenuOpen ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'
                 }`} />
-                <X className={`w-6 h-6 absolute transition-all duration-300 text-white ${
+                <X className={`w-6 h-6 absolute transition-all duration-300 ${
                   isMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'
                 }`} />
               </div>
@@ -245,74 +276,93 @@ const Header = () => {
           </div>
         </nav>
 
-        {/* Mobile Menu - Enhanced overlay */}
+        {/* Mobile Menu */}
         <div className={`lg:hidden overflow-hidden transition-all duration-700 ease-in-out ${
           isMenuOpen 
             ? 'max-h-screen opacity-100' 
             : 'max-h-0 opacity-0'
         }`}>
-          <div className="bg-black/95 backdrop-blur-2xl border-t border-white/20 shadow-2xl">
-            <div className="px-6 py-10">
+          <div className="bg-white border-t border-[#eaae07] shadow-lg">
+            <div className="px-4 py-6">
               
               {/* Mobile Navigation */}
-              <div className="flex flex-col space-y-3 mb-10">
+              <div className="flex flex-col space-y-1 mb-6">
                 {navigationItems.map((item, index) => {
                   const isActive = isActiveRoute(item.href);
                   return (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className={`py-5 px-6 rounded-2xl transition-all duration-500 ${
-                        getTextClasses(isActive 
-                          ? 'text-white bg-white/25 backdrop-blur-sm font-semibold shadow-lg scale-105' 
-                          : 'text-white/90 hover:text-white hover:bg-white/15 hover:scale-105'
-                        )
-                      } transform hover:translate-x-2`}
-                      onClick={() => setIsMenuOpen(false)}
-                      style={{ transitionDelay: `${index * 100}ms` }}
-                    >
-                      <div className="flex items-center justify-between">
-                        <span className="text-lg font-medium">
-                          {item.name}
-                        </span>
-                        {isActive && (
-                          <div className="w-3 h-3 bg-gradient-to-r from-teal-400 to-teal-300 rounded-full shadow-lg"></div>
-                        )}
-                      </div>
-                    </Link>
+                    <div key={item.name}>
+                      {item.hasDropdown ? (
+                        <div>
+                          <button
+                            onClick={(e) => handleDropdownToggle(item.name, e)}
+                            className={`w-full py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-between ${
+                              getTextClasses(isActive 
+                                ? 'text-[#035678] bg-blue-50 font-semibold' 
+                                : 'text-gray-700 hover:text-[#035678] hover:bg-gray-50'
+                              )
+                            }`}
+                          >
+                            <span className="text-base">
+                              {item.name}
+                            </span>
+                            <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${
+                              activeDropdown === item.name ? 'rotate-180' : 'rotate-0'
+                            }`} />
+                          </button>
+                          
+                          {/* Mobile Submenu */}
+                          {activeDropdown === item.name && (
+                            <div className={`mt-1 ${isRTL ? 'mr-4' : 'ml-4'} space-y-1`}>
+                              {item.subItems?.map((subItem) => (
+                                <Link
+                                  key={subItem.name}
+                                  href={subItem.href}
+                                  className={`block py-2 px-4 rounded-lg transition-all duration-300 ${
+                                    getTextClasses(isActiveRoute(subItem.href)
+                                      ? 'text-[#035678] bg-blue-100 font-semibold'
+                                      : 'text-gray-600 hover:text-[#035678] hover:bg-gray-50'
+                                    )
+                                  }`}
+                                  onClick={() => {
+                                    setIsMenuOpen(false);
+                                    setActiveDropdown(null);
+                                  }}
+                                >
+                                  {subItem.name}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ) : (
+                        <Link
+                          href={item.href}
+                          className={`py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-between ${
+                            getTextClasses(isActive 
+                              ? 'text-[#035678] bg-blue-50 font-semibold' 
+                              : 'text-gray-700 hover:text-[#035678] hover:bg-gray-50'
+                            )
+                          }`}
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <span className="text-base">
+                            {item.name}
+                          </span>
+                        </Link>
+                      )}
+                    </div>
                   );
                 })}
               </div>
               
-              {/* Mobile Contact & CTA Section */}
-              <div className="border-t border-white/20 pt-8 space-y-6">
-                {/* Contact Info */}
-                <div className={`flex items-center ${
-                  isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'
-                } bg-white/15 backdrop-blur-xl rounded-2xl p-6 border border-white/20 shadow-lg`}>
-                  <div className="w-14 h-14 bg-gradient-to-br from-white/30 to-white/20 rounded-2xl flex items-center justify-center shadow-lg">
-                    <Phone className="w-7 h-7 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <p className={getTextClasses("text-white font-semibold text-lg")}>
-                      {t('company.phone')}
-                    </p>
-                    <p className={getTextClasses("text-sm text-white/80")}>
-                      {t('header.available247')}
-                    </p>
-                  </div>
+              {/* Mobile Language Switcher */}
+              <div className="border-t border-gray-200 pt-4">
+                <div className="flex items-center justify-between px-4 py-3">
+                  <span className={getTextClasses("text-gray-700 font-medium")}>
+                    {t('header.language')}
+                  </span>
+                  <LanguageSwitcher />
                 </div>
-                
-                {/* CTA Button */}
-                <Button 
-                  size="lg" 
-                  className={`w-full justify-center bg-gradient-to-r from-white/25 to-white/20 hover:from-white/35 hover:to-white/30 border border-white/30 hover:border-white/50 text-white backdrop-blur-xl transition-all duration-500 group shadow-lg hover:shadow-xl py-4 ${
-                    isRTL ? 'font-tajawal font-medium' : ''
-                  }`}
-                >
-                  <span className="font-semibold text-lg">{t('header.getQuote')}</span>
-                  <ArrowRight className={`w-6 h-6 ${isRTL ? 'mr-3 rotate-180' : 'ml-3'} group-hover:translate-x-1 transition-transform duration-300`} />
-                </Button>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   const { isRTL } = useLanguage();
 
   return (
-    <div className={`min-h-screen bg-transparent ${isRTL ? 'rtl' : 'ltr'}`}>
+    <div className={`min-h-screen ${isRTL ? 'rtl' : 'ltr'}`}>
       <Header />
       <main className="transition-all duration-300">{children}</main>
       <Footer />

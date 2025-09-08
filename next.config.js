@@ -13,7 +13,7 @@ const nextConfig = {
   
   // Image optimization
   images: {
-    domains: ['images.unsplash.com', 'via.placeholder.com'],
+    domains: ['images.unsplash.com', 'via.placeholder.com', "assets.zyrosite.com"],
     formats: ['image/webp', 'image/avif'],
   },
   

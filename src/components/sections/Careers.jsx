@@ -1,16 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import TopCard from '../cards/TopCard';
 import ServiceHistory from '../cards/ServiceHistory';
-import { useTranslation } from '@/utils/i18n';
 
-const About = () => {
-  const {t} = useTranslation();
+const Careers = () => {
   return (
       <section className="relative bg-[#035678]  py-12 sm:py-16 m-b-4 lg:py-20">
-      <TopCard text={t("nav.about")} />
+      <TopCard text={"Careers"} />
       <ServiceHistory />
       </section>
   );
 };
 
-export default About;
+export default Careers;

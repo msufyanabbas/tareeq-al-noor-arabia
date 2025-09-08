@@ -1,420 +1,99 @@
 {
-  "home": "Home",
-  "about": "About",
-  "servicesPage": "Services",
-  "projects": "Projects",
-  "contact": "Contact",
-  "emergency": {
-    "title": "Emergency Services",
-    "description": "For construction emergencies, call our 24/7 emergency hotline:",
-    "phoneNumber": "+966 54 802 9209 HELP"
-  },
-  "getQuote": "Get Quote",
-  "available247": "24/7 Available",
-  "toggleMenu": "Toggle menu",
-  "learnMore": "Learn More",
-  "readMore": "Read More",
-  "viewAll": "View All",
-  "contactUs": "Contact Us",
-  "callNow": "Call Now",
-  "viewOurWork": "View Our Work",
-  "heroTitle": "Building Dreams, Creating Futures",
-  "heroSubtitle": "Professional construction services for residential and commercial projects with quality craftsmanship and reliable service.",
-  "aboutTitle": "About Us",
-  "aboutPageTitle": "About Us - Tareeq Al Noor Al Arabia Construction",
-  "aboutPageDescription": "Learn about Tareeq Al Noor Al Arabia Construction's history, mission, and commitment to excellence in construction services.",
-  "aboutPageSubtitle": "Building excellence since 2008, one project at a time",
-  "aboutSubtitle": "Years of experience in construction excellence",
-  "teamTitle": "Our Leadership Team",
-  "teamDescription": "Meet the experienced professionals who lead our construction projects and ensure quality delivery every time.",
-  "teamMember1Name": "Ahmed Al-Mansouri",
-  "teamMember1Role": "CEO & Founder",
-  "teamMember1Experience": "20+ years",
-  "teamMember1Description": "Licensed general contractor with expertise in commercial and residential construction.",
-  "teamMember2Name": "Sarah Mohammed",
-  "teamMember2Role": "Project Manager",
-  "teamMember2Experience": "15+ years",
-  "teamMember2Description": "Specializes in large-scale commercial projects and client relationship management.",
-  "teamMember3Name": "Khalid Al-Ahmad",
-  "teamMember3Role": "Lead Contractor",
-  "teamMember3Experience": "18+ years",
-  "teamMember3Description": "Expert in residential construction and renovation projects with attention to detail.",
-  "valuesTitle": "Our Values",
-  "valuesDescription": "These core values guide every decision we make and every project we undertake.",
-  "valueQuality": "Quality",
-  "valueQualityDescription": "We never compromise on quality, ensuring every project meets the highest standards.",
-  "valueIntegrity": "Integrity",
-  "valueIntegrityDescription": "Honest communication and transparent business practices in all our dealings.",
-  "valueInnovation": "Innovation",
-  "valueInnovationDescription": "Embracing new technologies and methods to deliver better construction solutions.",
-  "valueSafety": "Safety",
-  "valueSafetyDescription": "Prioritizing the safety of our workers, clients, and communities in every project.",
-  "ctaTitle": "Ready to Start Your Project?",
-  "ctaDescription": "Let's discuss how we can bring your construction vision to life with our expertise and commitment to excellence.",
-  "servicesTitle": "Our Services",
-  "servicesSubtitle": "Complete construction solutions for all your needs",
-  "projectsTitle": "Our Projects",
-  "projectsSubtitle": "Showcasing our finest work",
-  "contactTitle": "Get In Touch",
-  "contactSubtitle": "Ready to start your project? Contact us today",
-  "footerDescription": "Professional construction services with quality craftsmanship, reliable service, and competitive pricing.",
-  "quickLinks": "Quick Links",
-  "ourServices": "Our Services",
-  "followUs": "Follow Us",
-  "allRightsReserved": "All rights reserved.",
-  "servicesPageTitle": "Our Services - Tareeq Al Noor Al Arabia Construction",
-  "servicesPageDescription": "Comprehensive construction services including residential, commercial, renovation, and roofing. Quality craftsmanship and reliable service.",
-  "servicesPageHeroHighlight": "Excellence",
-  "servicesPageHeroSubtitle": "Comprehensive construction solutions tailored to your needs with quality craftsmanship and reliable service",
-  "getFreeQuote": "Get Free Quote",
-  "whatWeDoBest": "What We Do Best",
-  "whatWeDoBestDescription": "Our expertise spans across multiple construction disciplines, ensuring we can handle any project from start to finish.",
-  "residentialConstructionTitle": "Residential Construction",
-  "residentialConstructionDescription": "Complete home building services from foundation to finishing touches.",
-  "residentialFeature1": "Custom home design and construction",
-  "residentialFeature2": "Single-family and multi-family homes",
-  "residentialFeature3": "Energy-efficient building practices",
-  "residentialFeature4": "Quality materials and craftsmanship",
-  "residentialFeature5": "Project management and coordination",
-  "commercialConstructionTitle": "Commercial Construction",
-  "commercialConstructionDescription": "Professional commercial building services for businesses of all sizes.",
-  "commercialFeature1": "Office buildings and retail spaces",
-  "commercialFeature2": "Warehouses and industrial facilities",
-  "commercialFeature3": "Healthcare and educational facilities",
-  "commercialFeature4": "Restaurant and hospitality construction",
-  "commercialFeature5": "Code compliance and permitting",
-  "renovationRemodelingTitle": "Renovation & Remodeling",
-  "renovationRemodelingDescription": "Transform your existing space with our renovation expertise.",
-  "renovationFeature1": "Kitchen and bathroom remodeling",
-  "renovationFeature2": "Home additions and extensions",
-  "renovationFeature3": "Interior and exterior renovations",
-  "renovationFeature4": "Historic building restoration",
-  "renovationFeature5": "Accessibility modifications",
-  "roofingServicesTitle": "Roofing Services",
-  "roofingServicesDescription": "Comprehensive roofing solutions for residential and commercial properties.",
-  "roofingFeature1": "New roof installation",
-  "roofingFeature2": "Roof repair and maintenance",
-  "roofingFeature3": "Storm damage restoration",
-  "roofingFeature4": "Gutter installation and repair",
-  "roofingFeature5": "Skylight installation",
-  "imageText": "Image",
-  "ourProcess": "Our",
-  "processHighlight": "Process",
-  "processDescription": "We follow a proven process to ensure your construction project is completed on time, within budget, and to your satisfaction.",
-  "processStep1Title": "Consultation",
-  "processStep1Description": "We meet with you to understand your vision, requirements, and budget.",
-  "processStep2Title": "Planning",
-  "processStep2Description": "Our team creates detailed plans and obtains necessary permits.",
-  "processStep3Title": "Construction",
-  "processStep3Description": "We execute the project with skilled craftsmen and quality materials.",
-  "processStep4Title": "Completion",
-  "processStep4Description": "Final inspection and handover of your completed project.",
-  "projectsCompleted": "Projects Completed",
-  "yearsExperience": "Years Experience",
-  "happyClients": "Happy Clients",
-  "supportAvailable": "Support Available",
-  "readyToStartProject": "Ready to Start Your",
-  "projectHighlight": "Project?",
-  "servicesCtaDescription": "Contact us today for a free consultation and quote. We're here to help bring your construction vision to life with quality craftsmanship and reliable service.",
-  "callUsNow": "Call Us Now",
-  "footer.company.description": "Your trusted partner for comprehensive construction and fabrication services in Saudi Arabia. Building excellence with quality and precision.",
-  "footer.company.copyright": "© 2024 {companyName}. All rights reserved.",
-  "footer.company.subtitle": "Professional Construction & Fabrication Services in Saudi Arabia",
-  "footer.sections.services.title": "Our Services",
-  "footer.sections.contact.title": "Contact Info",
-  "footer.social.phone": "Phone",
-  "footer.social.email": "Email",
-  "footer.social.location": "Location",
-  "projectNumber": "500+",
-  "numberOfYears": "15+",
-  "numberOfRating": "5.0+",
   "nav": {
     "home": "Home",
-    "about": "About",
-    "services": "Services",
+    "about": "About Us",
+    "services": "Our Services",
     "projects": "Projects",
-    "contact": "Contact"
-  },
-  "company": {
-    "name": "Tareeq Al Noor Al Arabic Company",
-    "tagline": "Building Excellence Since 1985",
-    "phone": "+966 11 123 4567",
-    "city": "Jeddah",
-    "country": "Saudi Arabia"
+    "projectTypes": {
+      "residential": "Residential Projects",
+      "commercial": "Commercial Projects",
+      "industrial": "Industrial Projects",
+      "infrastructure": "Infrastructure",
+      "ongoing": "Ongoing Projects",
+      "completed": "Completed Projects"
+    },
+    "products": "Our Products",
+    "careers": "Careers",
+    "contact": "Contact Us"
   },
   "header": {
-    "available247": "Available 24/7",
-    "getQuote": "Get Free Quote",
-    "quote": "Quote",
-    "call": "Call",
-    "toggleMenu": "Toggle navigation menu"
+    "toggleMenu": "Toggle Navigation Menu",
+    "language": "Language",
+    "changeLanguage": "Change Language"
   },
   "common": {
-    "language": "Language",
-    "english": "English",
-    "arabic": "العربية"
-  },
-  "hero": {
-    "trustBadge": "Premium Construction Services",
-    "mainTitle": "Building the",
-    "futureText": "Future",
-    "subtitle": "One Project at a Time",
-    "description": "Your premier destination for comprehensive construction solutions in Jeddah. From industrial kitchens to complete building materials - we deliver excellence.",
-    "ctaGetStarted": "Get Started Today",
-    "ctaContact": "Contact Us",
-    "stats": {
-      "projectsDone": "Projects Done",
-      "yearsExperience": "Years Experience",
-      "satisfaction": "Satisfaction"
-    },
-    "serviceQuality": "Service Quality",
-    "serviceProgress": "Service Progress",
-    "features": {
-      "premiumQuality": "Premium Quality",
-      "fastDelivery": "Fast Delivery",
-      "support247": "24/7 Support"
-    },
-    "exploreMore": "Explore More",
-    "services": {
-      "kitchenFab": {
-        "title": "Stainless Steel Kitchen Fabrication",
-        "subtitle": "Home, Commercial & Industrial Solutions",
-        "description": "Premium quality stainless steel kitchens designed for durability and hygiene standards"
-      },
-      "aluminiumGlass": {
-        "title": "Aluminium & Glass Work",
-        "subtitle": "Structure, Cladding, Windows & Doors",
-        "description": "Complete aluminium solutions including structures, cladding, and office installations"
-      },
-      "ironFab": {
-        "title": "Iron Shade & Fabrication",
-        "subtitle": "Custom Hangers & Structural Work",
-        "description": "Robust iron fabrication for shades, hangers, and structural components"
-      },
-      "woodWork": {
-        "title": "Wood Materials & Work",
-        "subtitle": "Premium Carpentry Solutions",
-        "description": "High-quality wood materials and expert craftsmanship for all your needs"
-      },
-      "hvac": {
-        "title": "HVAC Complete Work",
-        "subtitle": "Exhaust & AC Duct Systems",
-        "description": "Comprehensive HVAC solutions for optimal climate control and air quality"
-      },
-      "electrical": {
-        "title": "Electrical Low Voltage",
-        "subtitle": "Professional Electrical Solutions",
-        "description": "Safe and efficient electrical installations for all your power needs"
-      },
-      "gypsum": {
-        "title": "Gypsum Work",
-        "subtitle": "Interior Finishing Excellence",
-        "description": "Professional gypsum board installation and finishing services"
-      },
-      "tilesEpoxy": {
-        "title": "Tiles & Epoxy Work",
-        "subtitle": "Flooring & Surface Solutions",
-        "description": "Premium tiles installation and durable epoxy flooring applications"
-      },
-      "waterproofing": {
-        "title": "Water & Heat Proofing",
-        "subtitle": "Protection & Insulation",
-        "description": "Complete waterproofing and thermal insulation solutions"
-      },
-      "materials": {
-        "title": "Building Materials & Tools",
-        "subtitle": "Complete Construction Solutions",
-        "description": "One-stop shop for all building materials and professional power tools"
-      }
-    }
-  },
-  "services": {
-    "badge": "Professional Services",
-    "title": "Our Expertise",
-    "subtitle": "Premium Construction Solutions",
-    "description": "Comprehensive construction and fabrication services delivered with excellence and precision across Saudi Arabia",
-    "stats": {
-      "services": "Services",
-      "projects": "Projects",
-      "years": "Years"
-    },
-    "items": {
-      "kitchen": {
-        "title": "Stainless Steel Kitchen Fabrication",
-        "subtitle": "Home, Commercial & Industrial Solutions",
-        "description": "Premium quality stainless steel kitchens designed for durability and hygiene standards",
-        "features": [
-          "Food Grade Materials",
-          "Custom Design",
-          "Easy Maintenance",
-          "Lifetime Warranty"
-        ]
-      },
-      "aluminum": {
-        "title": "Aluminium & Glass Work",
-        "subtitle": "Structure, Cladding, Windows & Doors",
-        "description": "Complete aluminium solutions including structures, cladding, and office installations",
-        "features": [
-          "Modern Designs",
-          "Energy Efficient",
-          "Weather Resistant",
-          "Professional Install"
-        ]
-      },
-      "iron": {
-        "title": "Iron Shade & Fabrication",
-        "subtitle": "Custom Hangers & Structural Work",
-        "description": "Robust iron fabrication for shades, hangers, and structural components",
-        "features": [
-          "Heavy Duty",
-          "Corrosion Resistant",
-          "Custom Shapes",
-          "Quick Installation"
-        ]
-      },
-      "wood": {
-        "title": "Wood Materials & Work",
-        "subtitle": "Premium Carpentry Solutions",
-        "description": "High-quality wood materials and expert craftsmanship for all your needs",
-        "features": [
-          "Premium Wood",
-          "Expert Craftsmanship",
-          "Custom Furniture",
-          "Eco-Friendly"
-        ]
-      },
-      "hvac": {
-        "title": "HVAC Complete Work",
-        "subtitle": "Exhaust & AC Duct Systems",
-        "description": "Comprehensive HVAC solutions for optimal climate control and air quality",
-        "features": [
-          "Energy Efficient",
-          "Smart Controls",
-          "Regular Maintenance",
-          "24/7 Support"
-        ]
-      },
-      "electrical": {
-        "title": "Electrical Low Voltage",
-        "subtitle": "Professional Electrical Solutions",
-        "description": "Safe and efficient electrical installations for all your power needs",
-        "features": [
-          "Safety First",
-          "Code Compliant",
-          "Modern Systems",
-          "Emergency Service"
-        ]
-      },
-      "gypsum": {
-        "title": "Gypsum Work",
-        "subtitle": "Interior Finishing Excellence",
-        "description": "Professional gypsum board installation and finishing services",
-        "features": [
-          "Smooth Finish",
-          "Fire Resistant",
-          "Sound Insulation",
-          "Quick Dry"
-        ]
-      },
-      "tiles": {
-        "title": "Tiles & Epoxy Work",
-        "subtitle": "Flooring & Surface Solutions",
-        "description": "Premium tiles installation and durable epoxy flooring applications",
-        "features": [
-          "Slip Resistant",
-          "Easy Clean",
-          "Durable Finish",
-          "Color Options"
-        ]
-      },
-      "waterproofing": {
-        "title": "Water & Heat Proofing",
-        "subtitle": "Protection & Insulation",
-        "description": "Complete waterproofing and thermal insulation solutions",
-        "features": [
-          "100% Waterproof",
-          "Energy Saving",
-          "Long Lasting",
-          "Professional Grade"
-        ]
-      },
-      "materials": {
-        "title": "Building Materials & Tools",
-        "subtitle": "Complete Construction Solutions",
-        "description": "One-stop shop for all building materials and professional power tools",
-        "features": [
-          "Quality Materials",
-          "Competitive Prices",
-          "Fast Delivery",
-          "Expert Advice"
-        ]
-      }
-    },
-    "quality": "Quality",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try Again",
     "learnMore": "Learn More",
-    "cta": {
-      "title": "Ready to Start Your Project?",
-      "description": "Our team of experts is here to help bring your vision to life with premium construction solutions.",
-      "getQuote": "Get Free Quote",
-      "viewPortfolio": "View Portfolio"
-    }
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "close": "Close",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add",
+    "update": "Update"
   },
   "footer": {
-    "company": {
-      "description": "We are a leading construction and engineering company dedicated to building excellence through innovation, quality, and reliability. Our team of experts delivers world-class solutions for residential, commercial, and industrial projects.",
-      "copyright": "© {currentYear} {companyName}. All rights reserved.",
-      "subtitle": "Built with passion and precision"
-    },
-    "sections": {
-      "services": {
-        "title": "Our Services"
-      },
-      "contact": {
-        "title": "Get In Touch"
-      },
-      "quickLinks": {
-        "title": "Quick Links"
-      },
-      "legal": {
-        "title": "Legal"
-      }
-    },
-    "newsletter": {
-      "badge": "Stay Updated",
-      "title": "Ready to Build Excellence?",
-      "description": "Get the latest updates on our projects, exclusive offers, and industry insights delivered to your inbox.",
-      "placeholder": "Enter your email address",
-      "button": "Subscribe"
-    },
-    "contact": {
-      "phone": "Phone",
-      "email": "Email",
-      "location": "Location",
-      "businessHours": "Business Hours",
-      "support247": "24/7 Support"
-    },
-    "stats": {
-      "projects": "Projects",
-      "years": "Years",
-      "rating": "Rating"
-    },
-    "social": {
-      "facebook": "Facebook",
-      "twitter": "Twitter",
-      "linkedin": "LinkedIn",
-      "instagram": "Instagram"
-    },
-    "links": {
-      "about": "About Us",
-      "services": "Services",
-      "portfolio": "Portfolio",
-      "blog": "Blog",
-      "careers": "Careers",
-      "contact": "Contact",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "cookies": "Cookie Policy",
-      "refund": "Refund Policy"
-    }
+    "company": "Tariq Al Nur Al Arabi",
+    "quickLinks": "Quick Links",
+    "companyDescription": "Tariq Al Nur Al Arabi is a leading company in aluminum and glass manufacturing, with years of experience delivering high-quality solutions for residential and commercial needs.",
+    "home": "Home",
+    "projects": "Projects",
+    "city": "Jeddah, Saudi Arabia",
+    "services": "Our Services",
+    "products": "Our Products",
+    "careers": "Careers",
+    "contact": "Contact Us",
+    "about": "About Us",
+    "phoneNumber": "+966 12 345 6789",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "currentYear": "2024",
+    "allRightsReserved": "All rights reserved",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "followUs": "Follow Us"
+  },
+  "careerCard": {
+    "careers": "Careers",
+    "description": "We are always looking for skilled construction professionals to join our team. If you think you’d make a good fit, check our open positions or submit an unsolicited application.",
+    "openPositions": "Open Positions"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Tariq Al Nur Al Arabi?",
+    "description": "With decades of experience, we combine innovation, craftsmanship, and dedication to deliver exceptional solutions. Our commitment to quality and customer satisfaction makes us a trusted partner for clients across the region. We don’t just manufacture products, we build long-lasting relationships."
+  },
+  "aboutCompany": {
+    "description": "Tariq Al Nur Al Arabi is a leading Saudi company with over 25 years of experience in manufacturing high-quality aluminum. Our experienced team ensures excellence through a practical approach, providing superior quality and service. Tariq Al Nur Al Arabi enjoys the trust of its clients, suppliers, and employees alike, making it the ideal choice for aluminum products in the region."
+  },
+   "residentialProducts": {
+    "title": "Residential Products",
+    "aluminiumWindows": "Aluminium Windows",
+    "aluminiumDoors": "Aluminium Doors", 
+    "aluminiumShutters": "Aluminium Shutters",
+    "claddingDoors": "Cladding Doors",
+    "steelDoors": "Steel Doors",
+    "railingGlass": "Railing Glass",
+    "exteriorGates": "Exterior Gates",
+    "showerGlass": "Shower Glass"
+  },
+  "commercialProducts": {
+    "title": "Commercial Products",
+    "emergencyFireRatedDoors": "Emergency Fire Rated Doors",
+    "emergencyStaircases": "Emergency Staircases", 
+    "cageLadders": "Cage Ladders",
+    "industrialGates": "Industrial Gates",
+    "stainlessSteelRailing": "Stainless Steel Railing",
+    "sandTrapLouvers": "Sand Trap Louvers",
+    "metalBoundaryFence": "Metal Boundary Fence"
   }
 }
