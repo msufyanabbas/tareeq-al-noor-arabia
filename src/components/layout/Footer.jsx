@@ -29,15 +29,15 @@ const Footer = () => {
     <footer className="bg-[#02496a] text-white">
       {/* WhatsApp Floating Button */}
       <div className={`fixed bottom-6 ${isRTL ? 'right-6' : 'left-6'} z-50`}>
-        <a 
+        {/* <a 
           href="https://wa.me/966599606818" 
           target="_blank" 
           rel="noopener noreferrer"
           className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group"
-        >
-          <MessageCircle className="w-7 h-7 text-white group-hover:scale-110 transition-transform" />
-          <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
-        </a>
+        > */}
+          {/* <MessageCircle className="w-7 h-7 text-white group-hover:scale-110 transition-transform" />
+          <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full animate-pulse"></div> */}
+        {/* </a> */}
       </div>
 
       {/* Main Footer Content */}
