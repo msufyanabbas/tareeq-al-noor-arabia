@@ -359,10 +359,10 @@ const ClientsPartnersSection = () => {
                     </p>
 
                     {/* View More Button */}
-                    <button className={`w-full bg-[#02496a] text-white py-2 px-4 rounded-lg font-semibold hover:bg-[#035678] transition-all duration-300 flex items-center justify-center group-hover:shadow-lg text-sm ${isRTL ? 'flex-row-reverse' : ''}`}>
+                    {/* <button className={`w-full bg-[#02496a] text-white py-2 px-4 rounded-lg font-semibold hover:bg-[#035678] transition-all duration-300 flex items-center justify-center group-hover:shadow-lg text-sm ${isRTL ? 'flex-row-reverse' : ''}`}>
                       <span>{t('clients.viewDetails')}</span>
                       <ArrowRight className={`w-4 h-4 transition-transform group-hover:translate-x-1 ${isRTL ? 'mr-2 rotate-180 group-hover:-translate-x-1' : 'ml-2'}`} />
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>

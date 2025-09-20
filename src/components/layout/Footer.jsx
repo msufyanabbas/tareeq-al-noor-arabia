@@ -109,8 +109,7 @@ const EnhancedFooter = () => {
                     </div>
                     <div>
                       <p className="text-gray-200 text-lg">
-                        Mansour Al Kaatib Street<br />
-                        Al Faisaliyah District<br />
+                        {t('footer.district')}<br />
                         {t('footer.city')}
                       </p>
                     </div>
@@ -135,7 +134,7 @@ const EnhancedFooter = () => {
             {/* Stats Grid */}
             <div className={`${isRTL ? 'lg:order-1' : ''}`}>
               <h3 className="text-2xl font-bold text-white mb-8">
-                Our Achievements
+                {t('careers.ourAchievements')}
               </h3>
               <div className="grid grid-cols-2 gap-6">
                 {stats.map((stat, index) => (
@@ -236,14 +235,14 @@ const EnhancedFooter = () => {
                 © {currentYear} {t('footer.company')}. {t('footer.allRightsReserved')}
               </p>
             </div>
-            <div className={`flex items-center gap-6 ${isRTL ? 'flex-row-reverse' : ''}`}>
+            {/* <div className={`flex items-center gap-6 ${isRTL ? 'flex-row-reverse' : ''}`}>
               <Link href="/privacy" className="hover:text-[#eaae07] transition-colors text-lg text-gray-200">
                 {t('footer.privacyPolicy')}
               </Link>
               <Link href="/terms" className="hover:text-[#eaae07] transition-colors text-lg text-gray-200">
                 {t('footer.termsOfService')}
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

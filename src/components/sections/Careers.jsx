@@ -165,6 +165,31 @@ const CareersSection = () => {
     // Reset form or show success message
   };
 
+  // Function to handle email application
+  const handleEmailApplication = (jobTitle) => {
+    const subject = encodeURIComponent(`Job Application - ${jobTitle}`);
+    const body = encodeURIComponent(`Dear Hiring Manager,
+
+I am writing to express my interest in the ${jobTitle} position at your company.
+
+Please find my application details below:
+
+Position: ${jobTitle}
+Name: [Your Full Name]
+Phone: [Your Phone Number]
+Experience: [Your Years of Experience]
+
+[Please attach your resume and include any additional information about your qualifications and why you're interested in this position]
+
+Thank you for considering my application. I look forward to hearing from you.
+
+Best regards,
+[Your Name]`);
+
+    const emailUrl = `mailto:info@tariqalnur.com?subject=${subject}&body=${body}`;
+    window.open(emailUrl, '_self');
+  };
+
   return (
     <div className="bg-[#02496a] text-white">
       {/* Hero Section */}
@@ -280,19 +305,11 @@ const CareersSection = () => {
                       <p className="text-gray-200 leading-relaxed">{job.description}</p>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3 lg:ml-8">
-                      {/* <button 
-                        onClick={() => setSelectedPosition(job)}
-                        className="bg-[#eaae07] text-[#02496a] px-6 py-3 rounded-lg font-bold hover:bg-[#d49b06] transition-colors duration-300"
-                      >
-                        View Details
-                      </button> */}
                       <button 
-                        // onClick={() => {
-                        //   setApplicationData({...applicationData, position: job.title});
-                        //   setShowApplicationForm(true);
-                        // }}
-                        className="border-2 border-[#eaae07] text-[#eaae07] px-6 py-3 rounded-lg font-bold hover:bg-[#eaae07] hover:text-[#02496a] transition-colors duration-300"
+                        onClick={() => handleEmailApplication(job.title)}
+                        className="border-2 border-[#eaae07] text-[#eaae07] px-6 py-3 rounded-lg font-bold hover:bg-[#eaae07] hover:text-[#02496a] transition-colors duration-300 flex items-center justify-center gap-2"
                       >
+                        <Mail className="w-4 h-4" />
                         Apply Now
                       </button>
                     </div>
@@ -380,12 +397,12 @@ const CareersSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 mt-8 pt-6 border-t border-white/20">
                 <button 
                   onClick={() => {
-                    setApplicationData({...applicationData, position: selectedPosition.title});
-                    setShowApplicationForm(true);
+                    handleEmailApplication(selectedPosition.title);
                     setSelectedPosition(null);
                   }}
-                  className="flex-1 bg-[#eaae07] text-[#02496a] py-3 px-6 rounded-lg font-bold hover:bg-[#d49b06] transition-colors duration-300"
+                  className="flex-1 bg-[#eaae07] text-[#02496a] py-3 px-6 rounded-lg font-bold hover:bg-[#d49b06] transition-colors duration-300 flex items-center justify-center gap-2"
                 >
+                  <Mail className="w-4 h-4" />
                   Apply for This Position
                 </button>
                 <button 
@@ -571,11 +588,6 @@ const CareersSection = () => {
                 <p className="text-lg">
                   {t('careers.culture.paragraph2')}
                 </p>
-                {/* <div className="pt-6">
-                  <button className="bg-[#eaae07] text-[#02496a] px-8 py-4 rounded-lg font-bold hover:bg-[#d49b06] transition-colors duration-300">
-                    {t('careers.culture.learnMore')}
-                  </button>
-                </div> */}
               </div>
             </div>
             <div className="relative">

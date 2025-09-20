@@ -198,7 +198,7 @@ const ContactSection = () => {
                   <MapPin className="w-4 h-4" />
                   View on Google Maps
                 </a>
-                <a 
+                {/* <a 
                   href="https://maps.google.com/maps?q=Mansour+Al+Kaatib+Street,+Al+Faisaliyah+District,+Jeddah+23442,+Saudi+Arabia&navigate=yes"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -206,7 +206,7 @@ const ContactSection = () => {
                 >
                   <Globe className="w-4 h-4" />
                   Get Directions
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
