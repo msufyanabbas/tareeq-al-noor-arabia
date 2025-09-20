@@ -266,7 +266,7 @@ const Header = () => {
                                 href={subItem.href}
                                 className={`block px-4 py-3 text-sm transition-colors duration-200 ${
                                   getTextClasses(isActiveRoute(subItem.href)
-                                    ? 'text-[#02496a] bg-blue-50 font-semibold'
+                                    ? 'text-[#02496a] bg-[#eaae07]/10 font-semibold'
                                     : 'text-gray-700 hover:text-[#02496a] hover:bg-gray-50'
                                   )
                                 }`}
@@ -363,7 +363,7 @@ const Header = () => {
               : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="bg-white border-t border-[#eaae07] shadow-xl rounded-b-lg mx-1">
+          <div className="bg-white border-t border-[#eaae07] shadow-xl rounded-b-lg mx-1 relative z-50">
             <div className="px-4 py-4">
               
               {/* Mobile Navigation */}
@@ -378,8 +378,8 @@ const Header = () => {
                             onClick={(e) => handleDropdownToggle(item.name, e)}
                             className={`w-full py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-between text-left ${
                               getTextClasses(isActive 
-                                ? 'text-[#02496a] bg-blue-50 font-semibold' 
-                                : 'text-gray-700 hover:text-[#02496a] hover:bg-gray-50'
+                                ? 'text-[#02496a] bg-[#eaae07]/10 font-semibold' 
+                                : 'text-gray-700 hover:text-[#02496a] hover:bg-[#eaae07]/5'
                               )
                             }`}
                           >
@@ -400,8 +400,8 @@ const Header = () => {
                                   href={subItem.href}
                                   className={`block py-2 px-3 rounded-lg transition-all duration-300 text-sm ${
                                     getTextClasses(isActiveRoute(subItem.href)
-                                      ? 'text-[#02496a] bg-blue-100 font-semibold'
-                                      : 'text-gray-600 hover:text-[#02496a] hover:bg-gray-50'
+                                      ? 'text-[#02496a] bg-[#eaae07]/15 font-semibold'
+                                      : 'text-gray-600 hover:text-[#02496a] hover:bg-[#eaae07]/5'
                                     )
                                   }`}
                                   onClick={() => {
@@ -420,8 +420,8 @@ const Header = () => {
                           href={item.href}
                           className={`block py-3 px-4 rounded-lg transition-all duration-300 ${
                             getTextClasses(isActive 
-                              ? 'text-[#02496a] bg-blue-50 font-semibold' 
-                              : 'text-gray-700 hover:text-[#02496a] hover:bg-gray-50'
+                              ? 'text-[#02496a] bg-[#eaae07]/10 font-semibold' 
+                              : 'text-gray-700 hover:text-[#02496a] hover:bg-[#eaae07]/5'
                             )
                           }`}
                           onClick={() => setIsMenuOpen(false)}
@@ -450,14 +450,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div 
-          className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
-          onClick={() => setIsMenuOpen(false)}
-        />
-      )}
     </header>
   );
 };
