@@ -1,5 +1,6 @@
 // src/components/sections/ComprehensiveServices.jsx
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import { 
   ChefHat, 
   Building2, 
@@ -23,6 +24,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const ComprehensiveServices = () => {
   const { t } = useTranslation();
   const { isRTL } = useLanguage();
+  const router = useRouter();
   const [activeService, setActiveService] = useState(0);
 
   const services = [
@@ -243,7 +245,10 @@ const ComprehensiveServices = () => {
                     </div>
 
                     {/* Learn More Button */}
-                    <button className={`w-full bg-[#02496a] text-white py-3 px-4 rounded-xl font-semibold hover:bg-[#035678] transition-all duration-300 flex items-center justify-center group-hover:shadow-lg ${isRTL ? 'flex-row-reverse' : ''}`}>
+                    <button 
+                      onClick={() => router.push(`/services/${service.id}`)}
+                      className={`w-full bg-[#02496a] text-white py-3 px-4 rounded-xl font-semibold hover:bg-[#035678] transition-all duration-300 flex items-center justify-center group-hover:shadow-lg ${isRTL ? 'flex-row-reverse' : ''}`}
+                    >
                       <span>{t('common.learnMore')}</span>
                       <ArrowRight className={`w-4 h-4 transition-transform group-hover:translate-x-1 ${isRTL ? 'mr-2 rotate-180 group-hover:-translate-x-1' : 'ml-2'}`} />
                     </button>
