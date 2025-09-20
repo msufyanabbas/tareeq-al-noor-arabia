@@ -304,7 +304,7 @@ const ComprehensiveServices = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#02496a] text-white">
+      {/* <section className="py-16 sm:py-20 lg:py-24 bg-[#02496a] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-white/20">
             <div className="w-20 h-20 mx-auto mb-6 bg-[#eaae07] rounded-2xl flex items-center justify-center">
@@ -326,7 +326,7 @@ const ComprehensiveServices = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

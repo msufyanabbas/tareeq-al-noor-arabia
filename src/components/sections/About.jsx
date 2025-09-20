@@ -180,7 +180,7 @@ const EnhancedAbout = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#02496a]">
+      {/* <section className="py-16 sm:py-20 lg:py-24 bg-[#02496a]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             {t('about.cta.title')}
@@ -194,7 +194,7 @@ const EnhancedAbout = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
