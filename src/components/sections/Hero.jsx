@@ -345,14 +345,14 @@ const Hero = () => {
               </div>
 
               {/* Call to Action Buttons */}
-              <div className={`flex flex-col sm:flex-row gap-4 ${isRTL ? 'sm:flex-row-reverse' : ''}`}>
+              {/* <div className={`flex flex-col sm:flex-row gap-4 ${isRTL ? 'sm:flex-row-reverse' : ''}`}>
                 <button className="bg-[#02496a] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#035678] transition-all duration-300 transform hover:scale-105 shadow-lg border border-white/30">
                   {isRTL ? 'اعرف المزيد' : 'Learn More'}
                 </button>
                 <button className="bg-[#02496a]/80 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#02496a] transition-all duration-300 border border-white/30">
                   {isRTL ? 'احصل على عرض سعر' : 'Get Quote'}
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
