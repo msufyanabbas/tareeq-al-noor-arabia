@@ -1,17 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Head from 'next/head';
-import Careers from '@/components/sections/Careers';
+import CareersSection from '@/components/sections/Careers';
+import { useTranslation } from '@/utils/i18n';
 
 const CareersPage = () => {
+  const { t } = useTranslation();
 
   return (
     <>
       <Head>
-        <title>Careers - Building the Future</title>
-        <meta name="description" content="Explore exciting career opportunities with our company and join our mission to build the future." />
+        <title>{t('nav.careers')} - Tariq Al Nur Al Arabi</title>
+        <meta name="description" content={t('careers.subtitle')} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="/careers" />
       </Head>
-      <Careers />
+      <CareersSection />
     </>
   );
 };

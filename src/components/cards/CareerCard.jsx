@@ -1,3 +1,4 @@
+// src/components/cards/CareerCard.jsx
 import { useTranslation } from "@/utils/i18n";
 import React from "react";
 

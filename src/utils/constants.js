@@ -1,3 +1,4 @@
+// src/utils/constants.js
 export const COMPANY_INFO = {
   name: 'Tareeq Al Noor Al Arabia',
   tagline: 'Construction & Fabrication',

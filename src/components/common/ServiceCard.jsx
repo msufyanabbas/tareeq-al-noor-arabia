@@ -1,3 +1,4 @@
+// src/components/common/ServiceCard.jsx
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
 import Card from '../ui/Card';

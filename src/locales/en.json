@@ -63,19 +63,407 @@
     "privacyPolicy": "Privacy Policy",
     "followUs": "Follow Us"
   },
-  "careerCard": {
-    "careers": "Careers",
-    "description": "We are always looking for skilled construction professionals to join our team. If you think you’d make a good fit, check our open positions or submit an unsolicited application.",
-    "openPositions": "Open Positions"
+  "about": {
+    "title": "About Tariq Al Nur Al Arabi",
+    "subtitle": "Your Trusted Partner in Fabrication & Total Construction Solutions",
+    "ourStory": {
+      "title": "Our Story",
+      "paragraph1": "Tariq Al Nur Al Arabi (TNAC) started as a statement against the sloppy professional standards that dominated the field of construction services 20 years ago. We wanted to set a new, high standard and work as consultants, solving our clients' problems.",
+      "paragraph2": "The company quickly grew and cemented itself as the new golden standard in commercial construction. Today we continue to build on that legacy and strive for excellence at everything we do.",
+      "paragraph3": "At TNAC, we aspire to contribute to the growth and development of Saudi Arabia while aligning with Vision 2030. Our commitment to delivering excellence, professionalism, and long-term value in every project we undertake."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "subtitle": "The principles that guide everything we do"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "We aim to be one of the most trusted and recognized names in the fabrication and construction industry. With successful project execution across residential, commercial, and industrial sectors, our company is driven by technical excellence, vast experience, and strong partnerships."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Tariq Al Nur Al Arabi (TNAC) is committed to delivering excellence, professionalism, and long-term value in every project we undertake. Our goal is to build lasting relationships with clients across the Kingdom of Saudi Arabia by upholding mutual respect, integrity, and a strong work ethic."
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Let's work together to bring your vision to life with our expert craftsmanship and professional service.",
+      "primaryButton": "Get Free Quote",
+      "secondaryButton": "View Our Projects"
+    }
+  },
+  "services": {
+    "title": "Our Comprehensive Services",
+    "subtitle": "Complete construction and fabrication solutions for all your needs",
+    "stats": {
+      "totalServices": "Total Services",
+      "projectsCompleted": "Projects Completed",
+      "yearsExperience": "Years Experience",
+      "support": "Support Available"
+    },
+    "stainlessSteel": {
+      "title": "Stainless Steel Fabrication",
+      "description": "Professional kitchen fabrication for home, commercial, and industrial applications with premium quality materials.",
+      "feature1": "Commercial Kitchen Equipment",
+      "feature2": "Custom Home Kitchens",
+      "feature3": "Industrial Applications",
+      "feature4": "Food-Grade Materials"
+    },
+    "aluminumGlass": {
+      "title": "Aluminum & Glass Works",
+      "description": "Complete aluminum solutions including structures, cladding, windows, doors, and office installations.",
+      "feature1": "Window & Door Installation",
+      "feature2": "Curtain Wall Systems",
+      "feature3": "Office Partitions",
+      "feature4": "Custom Aluminum Structures"
+    },
+    "ironFabrication": {
+      "title": "Iron & Steel Fabrication",
+      "description": "Heavy-duty iron shade hangers and custom steel fabrication for industrial and commercial needs.",
+      "feature1": "Structural Steel Work",
+      "feature2": "Iron Shade Hangers",
+      "feature3": "Custom Fabrication",
+      "feature4": "Industrial Solutions"
+    },
+    "woodCarpentry": {
+      "title": "Wood Materials & Carpentry",
+      "description": "Professional carpentry services for custom furniture and interior woodwork solutions.",
+      "feature1": "Custom Furniture",
+      "feature2": "Interior Woodwork",
+      "feature3": "Cabinet Installation",
+      "feature4": "Finishing Services"
+    },
+    "hvac": {
+      "title": "HVAC Systems",
+      "description": "Complete HVAC solutions including exhaust systems, AC ductwork, and ventilation installations.",
+      "feature1": "AC Ductwork Installation",
+      "feature2": "Exhaust Systems",
+      "feature3": "Ventilation Solutions",
+      "feature4": "Maintenance Services"
+    },
+    "electrical": {
+      "title": "Electrical & Low Voltage",
+      "description": "Professional electrical installations and low voltage systems for residential and commercial projects.",
+      "feature1": "Electrical Installation",
+      "feature2": "Low Voltage Systems",
+      "feature3": "Safety Systems",
+      "feature4": "Emergency Services"
+    },
+    "gypsumCeiling": {
+      "title": "Gypsum & Ceiling Work",
+      "description": "Professional gypsum work including partitions, ceiling design, and finishing solutions.",
+      "feature1": "Ceiling Design & Installation",
+      "feature2": "Partition Walls",
+      "feature3": "Decorative Elements",
+      "feature4": "Finishing Services"
+    },
+    "tilesFlooring": {
+      "title": "Tiles & Flooring Work",
+      "description": "Complete flooring solutions including all types of tiles, stone, and specialized flooring.",
+      "feature1": "Ceramic & Porcelain Tiles",
+      "feature2": "Natural Stone Installation",
+      "feature3": "Epoxy Flooring",
+      "feature4": "Maintenance Services"
+    },
+    "waterproofing": {
+      "title": "Waterproofing & Heat Insulation",
+      "description": "Professional waterproofing and thermal insulation services for all types of buildings.",
+      "feature1": "Roof Waterproofing",
+      "feature2": "Basement Protection",
+      "feature3": "Thermal Insulation",
+      "feature4": "Leak Repair Services"
+    },
+    "materialsSupply": {
+      "title": "Building Materials & Power Tools Supply",
+      "description": "Complete supply solutions for contractors and developers with quality materials and tools.",
+      "feature1": "Construction Materials",
+      "feature2": "Power Tools & Equipment",
+      "feature3": "Delivery Services",
+      "feature4": "Technical Support"
+    },
+    "process": {
+      "title": "Our Work Process",
+      "subtitle": "From consultation to completion, we ensure excellence at every step",
+      "step1": {
+        "title": "Consultation & Planning",
+        "description": "We meet with clients to understand their needs and develop comprehensive project plans."
+      },
+      "step2": {
+        "title": "Design & Engineering",
+        "description": "Our team creates detailed designs and engineering solutions tailored to your requirements."
+      },
+      "step3": {
+        "title": "Fabrication & Installation",
+        "description": "Expert fabrication in our workshop followed by professional installation at your site."
+      },
+      "step4": {
+        "title": "Quality Control & Delivery",
+        "description": "Rigorous quality checks ensure perfect results and timely project completion."
+      }
+    },
+    "cta": {
+      "title": "Need Professional Construction Services?",
+      "description": "Contact us today for a free consultation and quote for your next project.",
+      "primaryButton": "Get Free Quote",
+      "secondaryButton": "View Our Portfolio"
+    }
+  },
+  "products": {
+    "title": "Our Product Portfolio",
+    "subtitle": "Discover our comprehensive range of high-quality aluminum, glass, and steel products",
+    "categories": {
+      "all": "All Products",
+      "residential": "Residential",
+      "commercial": "Commercial",
+      "industrial": "Industrial"
+    },
+    "stats": {
+      "totalProducts": "Product Lines",
+      "categories": "Categories",
+      "yearsExperience": "Years Experience",
+      "qualityGuarantee": "Quality Guarantee"
+    },
+    "resultsFound": "products found",
+    "learnMore": "Learn More",
+    "residential": {
+      "aluminumWindows": {
+        "name": "Aluminum Windows",
+        "description": "Energy-efficient aluminum windows with superior thermal performance and modern design.",
+        "feature1": "Double glazed glass",
+        "feature2": "Thermal break technology",
+        "feature3": "Multiple opening options",
+        "feature4": "Weather resistant coating"
+      },
+      "aluminumDoors": {
+        "name": "Aluminum Doors",
+        "description": "Durable and stylish aluminum doors for residential applications with security features.",
+        "feature1": "Multi-point locking system",
+        "feature2": "Powder coated finish",
+        "feature3": "Custom sizing available",
+        "feature4": "Sound insulation"
+      },
+      "glassRailings": {
+        "name": "Glass Railings",
+        "description": "Modern glass railing systems that provide safety without compromising aesthetics.",
+        "feature1": "Tempered safety glass",
+        "feature2": "Stainless steel fittings",
+        "feature3": "Easy maintenance",
+        "feature4": "Custom height options"
+      },
+      "steelDoors": {
+        "name": "Steel Security Doors",
+        "description": "Heavy-duty steel doors providing maximum security for residential properties.",
+        "feature1": "Anti-theft technology",
+        "feature2": "Fire resistant materials",
+        "feature3": "Advanced locking system",
+        "feature4": "Custom design options"
+      }
+    },
+    "commercial": {
+      "curtainWalls": {
+        "name": "Curtain Wall Systems",
+        "description": "Advanced curtain wall systems for modern commercial buildings with energy efficiency.",
+        "feature1": "Structural glazing",
+        "feature2": "Energy efficient design",
+        "feature3": "Weather sealing",
+        "feature4": "Modular installation"
+      },
+      "fireRatedDoors": {
+        "name": "Fire Rated Doors",
+        "description": "Emergency fire-rated doors meeting international safety standards for commercial buildings.",
+        "feature1": "Fire resistance rating",
+        "feature2": "Emergency exit hardware",
+        "feature3": "Smoke sealing",
+        "feature4": "Code compliance"
+      },
+      "emergencyStairs": {
+        "name": "Emergency Staircases",
+        "description": "Safety-compliant emergency staircase systems for commercial and industrial buildings.",
+        "feature1": "Non-slip surfaces",
+        "feature2": "Code compliant design",
+        "feature3": "Durable construction",
+        "feature4": "Emergency lighting ready"
+      },
+      "stainlessRailings": {
+        "name": "Stainless Steel Railings",
+        "description": "Premium stainless steel railing systems for commercial applications with modern design.",
+        "feature1": "Marine grade steel",
+        "feature2": "Corrosion resistant",
+        "feature3": "Low maintenance",
+        "feature4": "Contemporary design"
+      }
+    },
+    "industrial": {
+      "industrialGates": {
+        "name": "Industrial Gates",
+        "description": "Heavy-duty industrial gates for secure access control in manufacturing facilities.",
+        "feature1": "Heavy-duty construction",
+        "feature2": "Automated operation",
+        "feature3": "Security features",
+        "feature4": "Weather protection"
+      },
+      "metalFencing": {
+        "name": "Metal Boundary Fencing",
+        "description": "Robust metal fencing solutions for perimeter security and property boundary definition.",
+        "feature1": "Galvanized steel construction",
+        "feature2": "Anti-climb design",
+        "feature3": "Modular panels",
+        "feature4": "Long-term durability"
+      },
+      "sandTrapLouvers": {
+        "name": "Sand Trap Louvers",
+        "description": "Specialized louver systems designed to prevent sand infiltration in desert environments.",
+        "feature1": "Sand filtering technology",
+        "feature2": "Weather resistant",
+        "feature3": "Airflow optimization",
+        "feature4": "Easy maintenance"
+      },
+      "cageLadders": {
+        "name": "Cage Ladders",
+        "description": "Safety cage ladder systems for industrial access with fall protection features.",
+        "feature1": "Fall protection cage",
+        "feature2": "Non-slip rungs",
+        "feature3": "Safety standards compliance",
+        "feature4": "Modular design"
+      }
+    },
+    "quality": {
+      "title": "Quality Assurance",
+      "subtitle": "Every product meets the highest standards of quality and durability",
+      "certification": {
+        "title": "International Standards",
+        "description": "All our products are manufactured according to international quality standards and certifications."
+      },
+      "materials": {
+        "title": "Premium Materials",
+        "description": "We use only the finest materials sourced from trusted suppliers to ensure product longevity."
+      },
+      "manufacturing": {
+        "title": "Advanced Manufacturing",
+        "description": "State-of-the-art manufacturing processes ensure precision and consistency in every product."
+      }
+    },
+    "cta": {
+      "title": "Interested in Our Products?",
+      "description": "Download our product catalog or contact us for a custom quote tailored to your needs.",
+      "catalog": "Download Catalog",
+      "quote": "Get Custom Quote"
+    }
+  },
+  "careers": {
+    "title": "Join Our Team",
+    "subtitle": "Build your future with Tariq Al Nur Al Arabi - where expertise meets opportunity",
+    "stats": {
+      "employees": "Team Members",
+      "departments": "Departments", 
+      "retention": "Employee Retention",
+      "openPositions": "Open Positions"
+    },
+    "whyWorkWithUs": {
+      "title": "Why Work With Us?",
+      "subtitle": "Discover the benefits of joining our growing team"
+    },
+    "benefits": {
+      "salary": {
+        "title": "Competitive Salary",
+        "description": "We offer competitive compensation packages with performance-based bonuses and regular salary reviews."
+      },
+      "growth": {
+        "title": "Career Growth",
+        "description": "Clear advancement paths and professional development opportunities to help you reach your career goals."
+      },
+      "training": {
+        "title": "Training & Development",
+        "description": "Continuous learning opportunities including technical training, certifications, and skill development programs."
+      },
+      "team": {
+        "title": "Great Team Environment",
+        "description": "Work with experienced professionals in a collaborative and supportive team environment."
+      }
+    },
+    "openPositions": {
+      "title": "Current Job Openings",
+      "subtitle": "Explore exciting career opportunities and join our growing team"
+    },
+    "culture": {
+      "title": "Our Company Culture",
+      "paragraph1": "At Tariq Al Nur Al Arabi, our people are what make us unique. Rather than outsourcing our construction engineers, we provide them with an environment that supports professional growth and excellence.",
+      "paragraph2": "We are strong believers in giving our employees a voice. Our teams are put together with careful consideration to ensure maximum productivity, engagement, and job satisfaction.",
+      "learnMore": "Learn About Our Culture"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to start your next project? Contact us today for professional consultation and competitive quotes",
+    "phone": "Phone Numbers",
+    "email": "Email Addresses", 
+    "address": "Our Location",
+    "hours": "Business Hours",
+    "form": {
+      "title": "Send Us a Message",
+      "description": "Fill out the form below and our team will get back to you within 24 hours.",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "company": "Company Name",
+      "companyPlaceholder": "Enter your company name (optional)",
+      "service": "Service Needed",
+      "servicePlaceholder": "Select a service",
+      "serviceOther": "Other",
+      "message": "Project Details",
+      "messagePlaceholder": "Tell us about your project requirements...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "successTitle": "Message Sent Successfully!",
+      "successMessage": "Thank you for contacting us. We'll get back to you within 24 hours."
+    },
+    "companyInfo": {
+      "title": "About Our Company",
+      "description": "TNAC has built a strong reputation by providing a wide range of services in the construction and fabrication sectors. With our experienced team and modern equipment, we execute each project with precision and professionalism.",
+      "specialties": "Our Specialties"
+    },
+    "businessHours": {
+      "title": "Business Hours"
+    },
+    "location": {
+      "title": "Visit Our Location",
+      "description": "Come visit our headquarters in Jeddah to see our facilities and discuss your project in person."
+    }
+  },
+  "stats": {
+    "projectsCompleted": "Projects Completed",
+    "yearsExperience": "Years Experience", 
+    "clientSatisfaction": "Client Satisfaction",
+    "support": "Support Available"
+  },
+  "values": {
+    "excellence": {
+      "title": "Excellence",
+      "description": "We strive for perfection in every project, ensuring the highest quality standards and superior craftsmanship."
+    },
+    "integrity": {
+      "title": "Integrity",
+      "description": "Honesty and transparency guide all our business relationships, building trust with clients and partners."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "description": "We continuously adopt new technologies and methods to deliver cutting-edge solutions to our clients."
+    },
+    "quality": {
+      "title": "Quality",
+      "description": "Quality is at the heart of everything we do, from material selection to final project delivery."
+    }
   },
   "whyChooseUs": {
     "title": "Why Choose Tariq Al Nur Al Arabi?",
-    "description": "With decades of experience, we combine innovation, craftsmanship, and dedication to deliver exceptional solutions. Our commitment to quality and customer satisfaction makes us a trusted partner for clients across the region. We don’t just manufacture products, we build long-lasting relationships."
+    "description": "With decades of experience, we combine innovation, craftsmanship, and dedication to deliver exceptional solutions. Our commitment to quality and customer satisfaction makes us a trusted partner for clients across the region. We don't just manufacture products, we build long-lasting relationships."
   },
   "aboutCompany": {
     "description": "Tariq Al Nur Al Arabi is a leading Saudi company with over 25 years of experience in manufacturing high-quality aluminum. Our experienced team ensures excellence through a practical approach, providing superior quality and service. Tariq Al Nur Al Arabi enjoys the trust of its clients, suppliers, and employees alike, making it the ideal choice for aluminum products in the region."
-  },
-   "residentialProducts": {
+  }, 
+  "residentialProducts": {
     "title": "Residential Products",
     "aluminiumWindows": "Aluminium Windows",
     "aluminiumDoors": "Aluminium Doors", 
@@ -95,5 +483,21 @@
     "stainlessSteelRailing": "Stainless Steel Railing",
     "sandTrapLouvers": "Sand Trap Louvers",
     "metalBoundaryFence": "Metal Boundary Fence"
+  },
+  "hero": {
+    "learnMore": "Learn More",
+    "getQuote": "Get Quote",
+    "categories": "Categories"
+  },
+  "heroCategories": {
+    "kitchenEquipment": "Kitchen Equipment",
+    "kitchenFurniture": "Kitchen Furniture",
+    "sanitationEquipment": "Sanitation Equipment",
+    "supportEquipment": "Support Equipment",
+    "hvacSystems": "HVAC Systems",
+    "accessSolutions": "Access Solutions",
+    "drainageSystems": "Drainage Systems",
+    "storageSolutions": "Storage Solutions",
+    "structuralComponents": "Structural Components"
   }
 }

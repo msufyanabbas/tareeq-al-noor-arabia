@@ -1,3 +1,4 @@
+// src/pages/projects.js
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import Container from '../components/ui/Container'

@@ -1,29 +1,35 @@
 import Head from 'next/head'
 import Hero from '../components/sections/Hero'
-import Services from '../components/sections/Services'
-import About from '../components/sections/About'
+import ProductsShowcase from '@/components/sections/Products'
+import EnhancedAbout from '@/components/sections/About'
+import ComprehensiveServices from '@/components/sections/Services'
 import Projects from '../components/sections/Projects'
-import Contact from '../components/sections/Contact'
-import Products from '@/components/sections/Products'
-import AboutTariqAlNurCard from '@/components/cards/AboutTariqAlNurCard'
-import WhyUsCard from '@/components/cards/WhyUsCard'
-import CareerCard from '@/components/cards/CareerCard'
+import ContactSection from '@/components/sections/Contact'
+import { useTranslation } from '@/utils/i18n'
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Head>
-        <title>Tareeq Al Noor Al Arabi Company - Professional Construction Services</title>
-        <meta name="description" content="Professional construction services for residential and commercial projects. Quality craftsmanship, reliable service, and competitive pricing." />
+        <title>Tariq Al Nur Al Arabi - {t('footer.companyDescription')}</title>
+        <meta name="description" content={t('footer.companyDescription')} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="/" />
+        <meta property="og:title" content="Tariq Al Nur Al Arabi" />
+        <meta property="og:description" content={t('footer.companyDescription')} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       
-      <main className='bg-[#035678]'>
+      <main>
         <Hero />
-        <Products />
-        <AboutTariqAlNurCard />
-        <WhyUsCard />
-        <CareerCard />
+        {/* <EnhancedAbout /> */}
+        {/* <ComprehensiveServices /> */}
+        {/* <ProductsShowcase /> */}
+        {/* <Projects /> */}
+        {/* <ContactSection /> */}
       </main>
     </>
   )

@@ -1,3 +1,4 @@
+// src/components/cards/AboutTariqAlNurCard.jsx
 import { useTranslation } from "@/utils/i18n";
 import React from "react";
 
