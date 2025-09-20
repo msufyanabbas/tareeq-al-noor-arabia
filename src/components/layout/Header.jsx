@@ -90,12 +90,12 @@ const Header = () => {
     { name: t('nav.home'), href: '/' },
     { name: t('nav.about'), href: '/about' },
     { name: t('nav.services'), href: '/services' },
-    { 
-      name: t('nav.projects'), 
-      href: '/projects', 
-      hasDropdown: true,
-      subItems: projectSubItems
-    },
+    // { 
+    //   name: t('nav.projects'), 
+    //   href: '/projects', 
+    //   hasDropdown: true,
+    //   subItems: projectSubItems
+    // },
     { name: t('nav.ourClients'), href: '/clients' },
     { name: t('nav.careers'), href: '/careers' },
     { name: t('nav.contact'), href: '/contact' },
