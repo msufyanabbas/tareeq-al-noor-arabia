@@ -24,7 +24,7 @@ const EnhancedFooter = () => {
     { label: t('footer.home'), href: '/' },
     { label: t('footer.about'), href: '/about' },
     { label: t('footer.services'), href: '/services' },
-    { label: t('footer.products'), href: '/products' },
+    { label: t('nav.ourClients'), href: '/clients' },
     { label: t('footer.projects'), href: '/projects' },
     { label: t('footer.careers'), href: '/careers' },
     { label: t('footer.contact'), href: '/contact' }

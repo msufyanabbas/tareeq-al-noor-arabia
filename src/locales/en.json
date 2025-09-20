@@ -13,6 +13,7 @@
       "completed": "Completed Projects"
     },
     "products": "Our Products",
+    "ourClients": "Our Clients",
     "careers": "Careers",
     "contact": "Contact Us"
   },
@@ -499,5 +500,89 @@
     "drainageSystems": "Drainage Systems",
     "storageSolutions": "Storage Solutions",
     "structuralComponents": "Structural Components"
-  }
+  },
+  "clients": {
+      "title": "Our Trusted Clients & Partners",
+      "subtitle": "Building lasting partnerships with leading companies across Saudi Arabia and the region",
+      "sectionTitle": "Trusted by Industry Leaders",
+      "sectionSubtitle": "We're proud to work with some of the most respected companies in various industries",
+      "imageAlt": "Professional team working on construction project",
+      "viewDetails": "View Details",
+      "categories": {
+        "all": "All Clients",
+        "restaurants": "Restaurants",
+        "industrial": "Industrial",
+        "commercial": "Commercial", 
+        "government": "Government"
+      },
+      "sectors": {
+        "foodBeverage": "Food & Beverage",
+        "development": "Development",
+        "construction": "Construction",
+        "realEstate": "Real Estate",
+        "entertainment": "Entertainment",
+        "services": "Services",
+        "technology": "Technology"
+      },
+      "projects": {
+        "kitchenHvac": "Kitchen HVAC Systems & Equipment",
+        "stainlessSteel": "Stainless Steel Fabrication",
+        "industrialHvac": "Industrial HVAC Solutions",
+        "structuralAluminum": "Structural Aluminum Works",
+        "aluminumGlass": "Aluminum & Glass Systems",
+        "luxuryFabrication": "Luxury Metal Fabrication",
+        "advancedConstruction": "Advanced Construction Solutions",
+        "hospitalInfrastructure": "Hospital Infrastructure",
+        "dataCenterInfrastructure": "Data Center Infrastructure"
+      },
+      "descriptions": {
+        "albaik": "Providing comprehensive kitchen equipment and HVAC solutions for one of Saudi Arabia's most beloved fast-food chains.",
+        "kfc": "Delivering high-quality kitchen systems and equipment for multiple KFC outlets across the Kingdom.",
+        "famousBurger": "Custom stainless steel kitchen equipment and fabrication solutions for this growing burger chain.",
+        "twoBites": "Complete kitchen HVAC and equipment solutions for modern quick-service restaurant operations.",
+        "hungry": "Specialized stainless steel fabrication and kitchen equipment for contemporary dining experiences.",
+        "cabibo": "Comprehensive kitchen HVAC systems and equipment installation for premium food service operations.",
+        "centuryBurger": "Custom stainless steel solutions and kitchen equipment for authentic burger restaurant experiences.",
+        "cafeAroma": "Complete kitchen systems and HVAC solutions for specialty coffee and dining establishments.",
+        "panda": "Large-scale kitchen equipment and fabrication solutions for one of Saudi Arabia's leading hypermarket chains.",
+        "modon": "Industrial HVAC and construction solutions for Saudi Arabia's premier industrial development authority.",
+        "alkifaContracting": "Structural aluminum works and fabrication solutions for major construction and infrastructure projects.",
+        "saudiEmaar": "Premium aluminum and glass systems for luxury real estate and commercial development projects.",
+        "emaar": "High-end metal fabrication and construction solutions for prestigious real estate developments.",
+        "khayal": "Advanced construction and fabrication solutions for innovative entertainment and cultural projects.",
+        "etmam": "Hospital infrastructure and specialized equipment solutions for government healthcare facilities.",
+        "labeeb": "Data center infrastructure and technology facility solutions for digital transformation projects."
+      },
+      "labels": {
+        "sector": "Sector",
+        "period": "Period",
+        "projects": "Projects"
+      },
+      "stats": {
+        "satisfiedClients": "Satisfied Clients",
+        "projectsCompleted": "Projects Completed",
+        "yearsExperience": "Years Experience",
+        "clientSatisfaction": "Client Satisfaction"
+      },
+      "whyTrustUs": {
+        "title": "Why Leading Companies Trust Us",
+        "quality": {
+          "title": "Uncompromising Quality",
+          "description": "We maintain the highest standards in every project, using premium materials and proven techniques to deliver exceptional results that exceed expectations."
+        },
+        "experience": {
+          "title": "15+ Years of Excellence",
+          "description": "Our extensive experience across diverse industries has equipped us with the knowledge and expertise to handle projects of any scale and complexity."
+        },
+        "partnership": {
+          "title": "True Partnership Approach",
+          "description": "We work closely with our clients as trusted partners, providing ongoing support and maintenance to ensure long-term success and satisfaction."
+        }
+      },
+      "cta": {
+        "title": "Ready to Join Our Success Stories?",
+        "description": "Let's discuss how we can help your business achieve its goals with our proven expertise and commitment to excellence.",
+        "secondaryButton": "Get In Touch"
+      }
+    }
 }

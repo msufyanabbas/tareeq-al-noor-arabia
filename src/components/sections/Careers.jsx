@@ -280,17 +280,17 @@ const CareersSection = () => {
                       <p className="text-gray-200 leading-relaxed">{job.description}</p>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3 lg:ml-8">
-                      <button 
+                      {/* <button 
                         onClick={() => setSelectedPosition(job)}
                         className="bg-[#eaae07] text-[#02496a] px-6 py-3 rounded-lg font-bold hover:bg-[#d49b06] transition-colors duration-300"
                       >
                         View Details
-                      </button>
+                      </button> */}
                       <button 
-                        onClick={() => {
-                          setApplicationData({...applicationData, position: job.title});
-                          setShowApplicationForm(true);
-                        }}
+                        // onClick={() => {
+                        //   setApplicationData({...applicationData, position: job.title});
+                        //   setShowApplicationForm(true);
+                        // }}
                         className="border-2 border-[#eaae07] text-[#eaae07] px-6 py-3 rounded-lg font-bold hover:bg-[#eaae07] hover:text-[#02496a] transition-colors duration-300"
                       >
                         Apply Now
@@ -571,11 +571,11 @@ const CareersSection = () => {
                 <p className="text-lg">
                   {t('careers.culture.paragraph2')}
                 </p>
-                <div className="pt-6">
+                {/* <div className="pt-6">
                   <button className="bg-[#eaae07] text-[#02496a] px-8 py-4 rounded-lg font-bold hover:bg-[#d49b06] transition-colors duration-300">
                     {t('careers.culture.learnMore')}
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="relative">

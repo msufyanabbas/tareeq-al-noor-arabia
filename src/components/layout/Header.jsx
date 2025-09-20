@@ -96,7 +96,7 @@ const Header = () => {
       hasDropdown: true,
       subItems: projectSubItems
     },
-    { name: t('nav.products'), href: '/products' },
+    { name: t('nav.ourClients'), href: '/clients' },
     { name: t('nav.careers'), href: '/careers' },
     { name: t('nav.contact'), href: '/contact' },
   ];
