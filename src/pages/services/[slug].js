@@ -498,9 +498,12 @@ From basic building supplies to specialized equipment, we provide procurement se
                   {service.description}
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-[#02496a] transition-colors">
+                  <a 
+                    href="mailto:info@tariqalnur.com"
+                    className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-[#02496a] transition-colors"
+                  >
                     Contact Us
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -673,14 +676,20 @@ From basic building supplies to specialized equipment, we provide procurement se
                   </div>
                   
                   <div className="space-y-4">
-                    <div className="flex items-center">
+                    <a 
+                      href="tel:+966548029209"
+                      className="flex items-center hover:text-[#eaae07] transition-colors"
+                    >
                       <Phone className="w-5 h-5 mr-3 text-[#eaae07]" />
-                      <span>+966 12 123 4567</span>
-                    </div>
-                    <div className="flex items-center">
+                      <span>+966 54 802 9209</span>
+                    </a>
+                    <a 
+                      href="mailto:info@tariqalnur.com"
+                      className="flex items-center hover:text-[#eaae07] transition-colors"
+                    >
                       <Mail className="w-5 h-5 mr-3 text-[#eaae07]" />
                       <span>info@tariqalnur.com</span>
-                    </div>
+                    </a>
                     <div className="flex items-center">
                       <MapPin className="w-5 h-5 mr-3 text-[#eaae07]" />
                       <span>Jeddah, Saudi Arabia</span>
