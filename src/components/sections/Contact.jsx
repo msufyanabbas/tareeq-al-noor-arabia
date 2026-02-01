@@ -59,7 +59,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: t('contact.email'),
-      details: ['info@tariqalnur.com', 'asad.manager@tariqalnur.com'],
+      details: ['info@tariqalnur.com', 'bassam.ceo@tariqalnur.com'],
       action: 'mailto:info@tariqalnur.com'
     },
     {
