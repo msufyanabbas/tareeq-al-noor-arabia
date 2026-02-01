@@ -53,8 +53,8 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: t('contact.phone'),
-      details: ['+966 54 802 9209', '+966 50 079 9714'],
-      action: 'tel:+966548029209'
+      details: ['+966 59 661 5010', '+966 50 079 9714'],
+      action: 'tel:+966596615010'
     },
     {
       icon: Mail,

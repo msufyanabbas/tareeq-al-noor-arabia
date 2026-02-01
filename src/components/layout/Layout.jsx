@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
       <main className="transition-all duration-300">{children}</main>
       <Footer />
       <WhatsAppButton 
-        phoneNumber="+966548029209" 
+        phoneNumber="+966596615010" 
         message="Hello! I'm interested in your services." 
       />
     </div>

@@ -677,11 +677,11 @@ From basic building supplies to specialized equipment, we provide procurement se
                   
                   <div className="space-y-4">
                     <a 
-                      href="tel:+966548029209"
+                      href="tel:+966596615010"
                       className="flex items-center hover:text-[#eaae07] transition-colors"
                     >
                       <Phone className="w-5 h-5 mr-3 text-[#eaae07]" />
-                      <span>+966 54 802 9209</span>
+                      <span>+966 59 661 5010</span>
                     </a>
                     <a 
                       href="mailto:info@tariqalnur.com"

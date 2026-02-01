@@ -2,8 +2,8 @@
 export const COMPANY_INFO = {
   name: 'Tareeq Al Noor Al Arabia',
   tagline: 'Construction & Fabrication',
-  phone: '+966 54 802 9209',
-  secondaryPhone: '+966 54 802 9209',
+  phone: '+966 59 661 5010',
+  secondaryPhone: '+966 59 661 5010',
   email: 'info@tareeqalnur.com',
   projectsEmail: 'projects@tariqalnuralarabia.com',
     address: {

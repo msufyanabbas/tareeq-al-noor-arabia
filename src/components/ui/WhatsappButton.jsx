@@ -3,7 +3,7 @@ import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 const WhatsAppButton = ({
-  phoneNumber = "+966 54 802 9209",
+  phoneNumber = "+966 59 661 5010",
   message = "Hello! I'm interested in your services."
 }) => {
   const { language, isRTL } = useLanguage();
