@@ -12,7 +12,7 @@ const Hero = () => {
 
   // Comprehensive slides data with all company services
   const slides = [
-     {
+    {
       id: 21,
       image: "https://images.pexels.com/photos/6474295/pexels-photo-6474295.jpeg?w=1920&q=80",
       category: isRTL ? "الجبس والأسقف" : "Gypsum & Ceiling",
@@ -30,7 +30,7 @@ const Hero = () => {
       description: isRTL ? "جدران تقسيم مرنة وجمالية للمكاتب والمنازل." : "Flexible and aesthetic partition walls for offices and homes.",
       features: isRTL ? ["تقسيمات مكاتب", "جدران خفيفة", "تركيب سريع", "عازل للصوت"] : ["Office Partitions", "Lightweight Walls", "Quick Installation", "Sound Insulation"]
     },
-     {
+    {
       id: 19,
       image: "https://images.pexels.com/photos/8961339/pexels-photo-8961339.jpeg?w=1920&q=80",
       category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
@@ -48,7 +48,7 @@ const Hero = () => {
       description: isRTL ? "خدمات لحام احترافية للهياكل واسعة النطاق ومكونات الآلات." : "Professional welding services for large-scale structures and machinery.",
       features: isRTL ? ["لحام معتمد", "تجميع دقيق", "اختبار جودة", "تطبيقات صناعية"] : ["Certified Welding", "Precision Assembly", "Quality Testing", "Industrial Applications"]
     },
-      {
+    {
       id: 20,
       image: "https://images.pexels.com/photos/8820184/pexels-photo-8820184.jpeg?w=1920&q=80",
       category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
@@ -57,8 +57,6 @@ const Hero = () => {
       description: isRTL ? "كسوة خشبية زخرفية وأعمال ألواح جدران للتصميمات الراقية." : "Decorative wood cladding and wall panel works for premium designs.",
       features: isRTL ? ["ألواح جدران", "كسوة خشبية", "تصاميم مخصصة", "تشطيبات فاخرة"] : ["Wall Panels", "Wood Cladding", "Custom Designs", "Luxury Finishes"]
     },
-
-    // Wood Materials & Carpentry (5 images)
     {
       id: 16,
       image: "https://images.pexels.com/photos/5691621/pexels-photo-5691621.jpeg?w=1920&q=80",
@@ -86,8 +84,6 @@ const Hero = () => {
       description: isRTL ? "إطارات مصنوعة حسب الطلب للمشاريع الصناعية والتجارية." : "Tailor-made framework for industrial and commercial projects.",
       features: isRTL ? ["تصميم مخصص", "إطارات صناعية", "حلول معمارية", "تصنيع دقيق"] : ["Custom Design", "Industrial Frames", "Architectural Solutions", "Precision Fabrication"]
     },
-
-    // Iron & Steel Fabrication (4 images)
     {
       id: 12,
       image: "https://images.pexels.com/photos/19408681/pexels-photo-19408681.jpeg?w=1920&q=80",
@@ -115,7 +111,6 @@ const Hero = () => {
       description: isRTL ? "إطارات فولاذية مصنوعة حسب الطلب للمشاريع المعمارية." : "Tailor-made steel frameworks for architectural projects.",
       features: isRTL ? ["تصميم مخصص", "تصنيع دقيق", "تطبيقات متعددة", "مواد عالية الجودة"] : ["Custom Design", "Precision Fabrication", "Multiple Applications", "High-Quality Materials"]
     },
-    // Stainless Steel Fabrication (6 images)
     {
       id: 1,
       image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1920&q=80",
@@ -170,8 +165,6 @@ const Hero = () => {
       description: isRTL ? "دعم تصميم ثلاثي الأبعاد وتصنيع دقيق وتركيب احترافي." : "3D design support, precise fabrication, and professional installation.",
       features: isRTL ? ["نماذج ثلاثية الأبعاد", "تصنيع دقيق", "تركيب خبير", "ضمان الجودة"] : ["3D Modeling", "Precise Fabrication", "Expert Installation", "Quality Assurance"]
     },
-
-    // Aluminum & Glass Works (5 images)
     {
       id: 7,
       image: "https://images.pexels.com/photos/8527494/pexels-photo-8527494.jpeg?w=1920&q=80",
@@ -208,8 +201,6 @@ const Hero = () => {
       description: isRTL ? "جدران وأبواب ومرفقات زجاجية للمكاتب المعاصرة." : "Glass walls, doors, and enclosures for contemporary interiors.",
       features: isRTL ? ["جدران زجاجية", "غرف اجتماعات", "مساحات مفتوحة", "تصميم حديث"] : ["Glass Walls", "Meeting Rooms", "Open Spaces", "Modern Design"]
     },
-    
-    
     {
       id: 18,
       image: "https://images.pexels.com/photos/8142055/pexels-photo-8142055.jpeg?w=1920&q=80",
@@ -218,13 +209,7 @@ const Hero = () => {
       subtitle: isRTL ? "حلول تخزين" : "Storage Solutions",
       description: isRTL ? "خزائن مطبخ وخزانات وحلول تخزين مصنوعة حسب الطلب." : "Kitchen cabinets, wardrobes, and storage solutions made to order.",
       features: isRTL ? ["خزائن مخصصة", "حلول تخزين", "تشطيبات راقية", "تصميم وظيفي"] : ["Custom Cabinets", "Storage Solutions", "Premium Finishes", "Functional Design"]
-    },
-   
-  
-
-    // Gypsum & Ceiling Works (5 images)
-   
-    
+    }
   ];
 
   // Auto-play functionality
@@ -261,14 +246,12 @@ const Hero = () => {
   };
 
   const currentSlideData = slides[currentSlide];
-
-  // Get unique categories with shortened names
   const categories = [...new Set(slides.map(slide => slide.category))];
 
   return (
-    <section className="relative h-screen overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
+    <section className="relative h-screen w-full overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
       
-      {/* Image Container */}
+      {/* Image Container - Fixed for mobile */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
           <div
@@ -280,60 +263,68 @@ const Hero = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              style={{ 
+                objectFit: 'cover',
+                objectPosition: 'center'
+              }}
               onError={(e) => {
                 e.target.src = 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80';
               }}
             />
-            {/* Gradient Overlay */}
-            <div className={`absolute inset-0 bg-gradient-to-r ${
+            {/* Enhanced Gradient Overlay for better text visibility */}
+            <div className={`absolute inset-0 ${
               isRTL 
-                ? 'from-transparent via-[#02496a]/30 to-[#02496a]/90' 
-                : 'from-[#02496a]/90 via-[#02496a]/30 to-transparent'
+                ? 'bg-gradient-to-l from-[#02496a]/95 via-[#02496a]/60 to-[#02496a]/30' 
+                : 'bg-gradient-to-r from-[#02496a]/95 via-[#02496a]/60 to-[#02496a]/30'
+            } md:${
+              isRTL 
+                ? 'bg-gradient-to-l from-transparent via-[#02496a]/40 to-[#02496a]/90' 
+                : 'bg-gradient-to-r from-[#02496a]/90 via-[#02496a]/40 to-transparent'
             }`}></div>
           </div>
         ))}
       </div>
 
-      {/* Content Overlay */}
-      <div className="absolute inset-0 flex items-center z-20">
-        <div className="w-full h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 w-full">
-            <div className={`max-w-md sm:max-w-lg lg:max-w-2xl ${isRTL ? 'mr-0 ml-auto text-right' : 'ml-0 mr-auto text-left'}`}>
+      {/* Content Overlay - Fixed positioning for mobile */}
+      <div className="absolute inset-0 flex items-end md:items-center z-20">
+        <div className="w-full h-full flex items-end md:items-center pb-20 md:pb-0">
+          <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div className={`w-full md:max-w-lg lg:max-w-2xl ${isRTL ? 'md:mr-0 md:ml-auto text-right' : 'md:ml-0 md:mr-auto text-left'}`}>
             
               {/* Category Badge */}
               <div className="mb-2 sm:mb-3">
-                <span className="inline-flex items-center gap-1.5 sm:gap-2 bg-[#02496a]/95 backdrop-blur-sm text-white px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs font-semibold border border-[#eaae07]/60 shadow-lg">
+                <span className="inline-flex items-center gap-1.5 bg-[#02496a]/95 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-semibold border border-[#eaae07]/60 shadow-lg">
                   <div className="w-1.5 h-1.5 bg-[#eaae07] rounded-full animate-pulse flex-shrink-0"></div>
-                  <span className="truncate max-w-[150px] sm:max-w-none">{currentSlideData.category}</span>
+                  <span className="truncate max-w-[200px]">{currentSlideData.category}</span>
                 </span>
               </div>
 
-              {/* Main Title */}
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-2 sm:mb-3 leading-tight drop-shadow-2xl">
+              {/* Main Title - Better sizing for mobile */}
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-3 leading-tight drop-shadow-2xl">
                 {currentSlideData.title}
               </h1>
 
               {/* Decorative Line */}
-              <div className={`w-12 sm:w-16 lg:w-20 h-0.5 bg-[#eaae07] mb-2 sm:mb-3 lg:mb-4 ${isRTL ? 'mr-auto' : 'ml-0'}`}></div>
+              <div className={`w-16 sm:w-20 h-0.5 bg-[#eaae07] mb-2 sm:mb-3 ${isRTL ? 'mr-auto md:mr-0' : 'ml-0'}`}></div>
 
               {/* Subtitle */}
-              <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-white/95 mb-2 sm:mb-3 lg:mb-4 leading-relaxed">
+              <h2 className="text-base sm:text-lg md:text-xl font-medium text-white/95 mb-2 sm:mb-3 leading-relaxed">
                 {currentSlideData.subtitle}
               </h2>
 
               {/* Description */}
-              <p className="text-xs sm:text-sm lg:text-base text-gray-100 mb-3 sm:mb-4 lg:mb-6 leading-relaxed drop-shadow-lg">
+              <p className="text-sm sm:text-base text-gray-100 mb-3 sm:mb-4 leading-relaxed drop-shadow-lg line-clamp-2 md:line-clamp-none">
                 {currentSlideData.description}
               </p>
 
-              {/* Features List */}
+              {/* Features List - Simplified for mobile */}
               <div className="mb-4 sm:mb-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-2">
+                <div className="grid grid-cols-2 gap-2">
                   {currentSlideData.features.map((feature, index) => (
                     <div 
                       key={index} 
-                      className={`flex items-center bg-white/10 backdrop-blur-sm rounded-md px-2 sm:px-3 py-1.5 sm:py-2 border border-white/20 ${isRTL ? 'flex-row-reverse' : ''}`}
+                      className={`flex items-center bg-white/10 backdrop-blur-sm rounded-md px-2.5 py-1.5 sm:px-3 sm:py-2 border border-white/20 ${isRTL ? 'flex-row-reverse' : ''}`}
                     >
                       <div className={`w-1.5 h-1.5 bg-[#eaae07] rounded-full flex-shrink-0 ${isRTL ? 'ml-2' : 'mr-2'}`}></div>
                       <span className="text-xs sm:text-sm text-white font-medium truncate">{feature}</span>
@@ -369,17 +360,17 @@ const Hero = () => {
 
       {/* Bottom Controls */}
       <div className="absolute bottom-3 sm:bottom-4 lg:bottom-6 left-0 right-0 z-30">
-        <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4 flex items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 flex items-center justify-between gap-2">
           
           {/* Slide Counter */}
-          <div className="bg-[#02496a]/95 backdrop-blur-sm rounded-full px-2.5 sm:px-3 py-1.5 sm:py-2 text-white text-xs border border-[#eaae07]/60 shadow-lg flex-shrink-0">
+          <div className="bg-[#02496a]/95 backdrop-blur-sm rounded-full px-3 py-1.5 text-white text-xs border border-[#eaae07]/60 shadow-lg flex-shrink-0">
             <span className="font-bold text-[#eaae07]">{currentSlide + 1}</span>
             <span className="text-white/70 mx-0.5">/</span>
             <span className="text-white/90">{slides.length}</span>
           </div>
 
           {/* Dot Indicators */}
-          <div className="hidden sm:flex items-center gap-1.5 px-2.5 sm:px-3 py-2 bg-[#02496a]/95 backdrop-blur-sm rounded-full border border-[#eaae07]/60 shadow-lg overflow-x-auto max-w-xs lg:max-w-md">
+          <div className="hidden sm:flex items-center gap-1.5 px-3 py-2 bg-[#02496a]/95 backdrop-blur-sm rounded-full border border-[#eaae07]/60 shadow-lg overflow-x-auto max-w-xs lg:max-w-md">
             {slides.slice(0, 8).map((_, index) => (
               <button
                 key={index}
@@ -423,7 +414,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* Category Sidebar - Redesigned for better responsiveness */}
+      {/* Category Sidebar - Only on desktop */}
       <div className={`absolute top-20 sm:top-24 z-30 hidden xl:block ${isRTL ? 'left-3 lg:left-4' : 'right-3 lg:right-4'}`}>
         <div className="bg-[#02496a]/95 backdrop-blur-md rounded-xl p-3 w-60 border border-[#eaae07]/60 shadow-2xl">
           <div className="text-white text-xs font-bold mb-3 px-2 flex items-center gap-2">
