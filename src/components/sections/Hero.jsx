@@ -12,6 +12,109 @@ const Hero = () => {
 
   // Comprehensive slides data with all company services
   const slides = [
+     {
+      id: 21,
+      image: "https://images.pexels.com/photos/6474295/pexels-photo-6474295.jpeg?w=1920&q=80",
+      category: isRTL ? "الجبس والأسقف" : "Gypsum & Ceiling",
+      title: isRTL ? "تركيب أسقف مستعارة" : "False Ceiling Installation",
+      subtitle: isRTL ? "أسقف وظيفية" : "Functional Ceilings",
+      description: isRTL ? "أسقف زخرفية ووظيفية للمشاريع السكنية والتجارية." : "Decorative and functional ceilings for residential projects.",
+      features: isRTL ? ["أسقف حديثة", "تركيب احترافي", "تصاميم مخصصة", "إضاءة متكاملة"] : ["Modern Ceilings", "Professional Installation", "Custom Designs", "Integrated Lighting"]
+    },
+    {
+      id: 22,
+      image: "https://images.pexels.com/photos/5691608/pexels-photo-5691608.jpeg?w=1920&q=80",
+      category: isRTL ? "الجبس والأسقف" : "Gypsum & Ceiling",
+      title: isRTL ? "فواصل جبسية" : "Gypsum Partitions",
+      subtitle: isRTL ? "جدران مرنة" : "Flexible Walls",
+      description: isRTL ? "جدران تقسيم مرنة وجمالية للمكاتب والمنازل." : "Flexible and aesthetic partition walls for offices and homes.",
+      features: isRTL ? ["تقسيمات مكاتب", "جدران خفيفة", "تركيب سريع", "عازل للصوت"] : ["Office Partitions", "Lightweight Walls", "Quick Installation", "Sound Insulation"]
+    },
+     {
+      id: 19,
+      image: "https://images.pexels.com/photos/8961339/pexels-photo-8961339.jpeg?w=1920&q=80",
+      category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
+      title: isRTL ? "أبواب خشبية" : "Wooden Doors",
+      subtitle: isRTL ? "حرفية تقليدية" : "Traditional Craft",
+      description: isRTL ? "أبواب وإطارات وألواح خشبية مصنوعة بخبرة." : "Expertly crafted wooden doors, frames, and paneling.",
+      features: isRTL ? ["أبواب صلبة", "إطارات مخصصة", "ألواح زخرفية", "تصميم كلاسيكي"] : ["Solid Doors", "Custom Frames", "Decorative Panels", "Classic Design"]
+    },
+    {
+      id: 15,
+      image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?w=1920&q=80",
+      category: isRTL ? "الحديد والصلب" : "Iron & Steel",
+      title: isRTL ? "أعمال لحام صناعية" : "Industrial Welding",
+      subtitle: isRTL ? "لحام احترافي" : "Professional Welding",
+      description: isRTL ? "خدمات لحام احترافية للهياكل واسعة النطاق ومكونات الآلات." : "Professional welding services for large-scale structures and machinery.",
+      features: isRTL ? ["لحام معتمد", "تجميع دقيق", "اختبار جودة", "تطبيقات صناعية"] : ["Certified Welding", "Precision Assembly", "Quality Testing", "Industrial Applications"]
+    },
+      {
+      id: 20,
+      image: "https://images.pexels.com/photos/8820184/pexels-photo-8820184.jpeg?w=1920&q=80",
+      category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
+      title: isRTL ? "كسوة خشبية" : "Wood Cladding",
+      subtitle: isRTL ? "ألواح جدران" : "Wall Panels",
+      description: isRTL ? "كسوة خشبية زخرفية وأعمال ألواح جدران للتصميمات الراقية." : "Decorative wood cladding and wall panel works for premium designs.",
+      features: isRTL ? ["ألواح جدران", "كسوة خشبية", "تصاميم مخصصة", "تشطيبات فاخرة"] : ["Wall Panels", "Wood Cladding", "Custom Designs", "Luxury Finishes"]
+    },
+
+    // Wood Materials & Carpentry (5 images)
+    {
+      id: 16,
+      image: "https://images.pexels.com/photos/5691621/pexels-photo-5691621.jpeg?w=1920&q=80",
+      category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
+      title: isRTL ? "تصنيع أثاث مخصص" : "Custom Furniture",
+      subtitle: isRTL ? "حلول خشبية راقية" : "Premium Wood",
+      description: isRTL ? "تصنيع أثاث مخصص عالي الجودة للمشاريع السكنية والتجارية." : "High-quality custom furniture manufacturing for residential projects.",
+      features: isRTL ? ["أثاث مخصص", "أخشاب صلبة", "براعة فنية", "تشطيبات راقية"] : ["Custom Furniture", "Hardwood Materials", "Expert Craftsmanship", "Premium Finishes"]
+    },
+    {
+      id: 17,
+      image: "https://images.pexels.com/photos/5974054/pexels-photo-5974054.jpeg?w=1920&q=80",
+      category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
+      title: isRTL ? "تجهيزات خشبية" : "Wood Fit-Outs",
+      subtitle: isRTL ? "حلول مكاتب" : "Office Solutions",
+      description: isRTL ? "تجهيزات خشبية داخلية للمكاتب والمساحات التجارية." : "Interior wood fit-outs for offices and commercial spaces.",
+      features: isRTL ? ["تجهيزات مكاتب", "جدران خشبية", "أرفف مخصصة", "تصميم احترافي"] : ["Office Fit-Outs", "Wood Paneling", "Custom Shelving", "Professional Design"]
+    },
+    {
+      id: 11,
+      image: "https://images.pexels.com/photos/4956912/pexels-photo-4956912.jpeg?w=1920&q=80",
+      category: isRTL ? "الألمنيوم والزجاج" : "Aluminum & Glass",
+      title: isRTL ? "هياكل ألمنيوم مخصصة" : "Custom Aluminum Structures",
+      subtitle: isRTL ? "حلول مصممة خصيصاً" : "Tailored Solutions",
+      description: isRTL ? "إطارات مصنوعة حسب الطلب للمشاريع الصناعية والتجارية." : "Tailor-made framework for industrial and commercial projects.",
+      features: isRTL ? ["تصميم مخصص", "إطارات صناعية", "حلول معمارية", "تصنيع دقيق"] : ["Custom Design", "Industrial Frames", "Architectural Solutions", "Precision Fabrication"]
+    },
+
+    // Iron & Steel Fabrication (4 images)
+    {
+      id: 12,
+      image: "https://images.pexels.com/photos/19408681/pexels-photo-19408681.jpeg?w=1920&q=80",
+      category: isRTL ? "الحديد والصلب" : "Iron & Steel",
+      title: isRTL ? "تصنيع الصلب الهيكلي" : "Structural Steel Fabrication",
+      subtitle: isRTL ? "هياكل فائقة التحمل" : "Heavy-Duty Structures",
+      description: isRTL ? "تصميم وتصنيع وتركيب العوارض والأعمدة والإطارات." : "Design, fabrication, and installation of beams and columns.",
+      features: isRTL ? ["عوارض فولاذية", "إطارات صناعية", "تصميم هندسي", "تركيب آمن"] : ["Steel Beams", "Industrial Frames", "Engineering Design", "Safe Installation"]
+    },
+    {
+      id: 13,
+      image: "https://images.pexels.com/photos/36003990/pexels-photo-36003990.jpeg?w=1920&q=80",
+      category: isRTL ? "الحديد والصلب" : "Iron & Steel",
+      title: isRTL ? "مظلات حديدية" : "Iron Canopies",
+      subtitle: isRTL ? "حلول ظل متينة" : "Durable Shade",
+      description: isRTL ? "حلول ظل متينة وجذابة للمناطق الخارجية والممرات." : "Durable and visually appealing shading solutions for outdoor areas.",
+      features: isRTL ? ["مظلات خارجية", "معلقات ظل", "تصميم جمالي", "مقاوم للطقس"] : ["Outdoor Canopies", "Shade Structures", "Aesthetic Design", "Weather Resistant"]
+    },
+    {
+      id: 14,
+      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?w=1920&q=80",
+      category: isRTL ? "الحديد والصلب" : "Iron & Steel",
+      title: isRTL ? "هياكل صلب مخصصة" : "Custom Steel Structures",
+      subtitle: isRTL ? "حلول حسب الطلب" : "Made-to-Order",
+      description: isRTL ? "إطارات فولاذية مصنوعة حسب الطلب للمشاريع المعمارية." : "Tailor-made steel frameworks for architectural projects.",
+      features: isRTL ? ["تصميم مخصص", "تصنيع دقيق", "تطبيقات متعددة", "مواد عالية الجودة"] : ["Custom Design", "Precision Fabrication", "Multiple Applications", "High-Quality Materials"]
+    },
     // Stainless Steel Fabrication (6 images)
     {
       id: 1,
@@ -60,7 +163,7 @@ const Hero = () => {
     },
     {
       id: 6,
-      image: "https://images.pexels.com/photos/7218526/pexels-photo-7218526.jpeg?w=1920&q=80",
+      image: "https://images.pexels.com/photos/33924060/pexels-photo-33924060.jpeg?w=1920&q=80",
       category: isRTL ? "تصنيع الفولاذ" : "Stainless Steel",
       title: isRTL ? "تصميم وتركيب مخصص" : "Custom Design & Installation",
       subtitle: isRTL ? "من المفهوم إلى الإنجاز" : "From Concept to Completion",
@@ -71,7 +174,7 @@ const Hero = () => {
     // Aluminum & Glass Works (5 images)
     {
       id: 7,
-      image: "https://images.pexels.com/photos/8961289/pexels-photo-8961289.jpeg?w=1920&q=80",
+      image: "https://images.pexels.com/photos/8527494/pexels-photo-8527494.jpeg?w=1920&q=80",
       category: isRTL ? "الألمنيوم والزجاج" : "Aluminum & Glass",
       title: isRTL ? "نوافذ وأبواب مخصصة" : "Custom Windows & Doors",
       subtitle: isRTL ? "حلول موفرة للطاقة" : "Energy-Efficient Solutions",
@@ -80,7 +183,7 @@ const Hero = () => {
     },
     {
       id: 8,
-      image: "https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?w=1920&q=80",
+      image: "https://images.pexels.com/photos/33903294/pexels-photo-33903294.jpeg?w=1920&q=80",
       category: isRTL ? "الألمنيوم والزجاج" : "Aluminum & Glass",
       title: isRTL ? "أنظمة الجدران الستارية" : "Curtain Wall Systems",
       subtitle: isRTL ? "واجهات حديثة" : "Modern Facades",
@@ -89,7 +192,7 @@ const Hero = () => {
     },
     {
       id: 9,
-      image: "https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?w=1920&q=80",
+      image: "https://images.pexels.com/photos/13181569/pexels-photo-13181569.jpeg?w=1920&q=80",
       category: isRTL ? "الألمنيوم والزجاج" : "Aluminum & Glass",
       title: isRTL ? "فواصل زجاجية" : "Glass Partitions",
       subtitle: isRTL ? "حلول تقسيم حديثة" : "Modern Partitioning",
@@ -98,239 +201,30 @@ const Hero = () => {
     },
     {
       id: 10,
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?w=1920&q=80",
+      image: "https://images.pexels.com/photos/18435276/pexels-photo-18435276.jpeg?w=1920&q=80",
       category: isRTL ? "الألمنيوم والزجاج" : "Aluminum & Glass",
       title: isRTL ? "تجهيز المكاتب" : "Office Fit-Out",
       subtitle: isRTL ? "مساحات عمل مفتوحة" : "Open Workspace",
       description: isRTL ? "جدران وأبواب ومرفقات زجاجية للمكاتب المعاصرة." : "Glass walls, doors, and enclosures for contemporary interiors.",
       features: isRTL ? ["جدران زجاجية", "غرف اجتماعات", "مساحات مفتوحة", "تصميم حديث"] : ["Glass Walls", "Meeting Rooms", "Open Spaces", "Modern Design"]
     },
-    {
-      id: 11,
-      image: "https://images.pexels.com/photos/7218622/pexels-photo-7218622.jpeg?w=1920&q=80",
-      category: isRTL ? "الألمنيوم والزجاج" : "Aluminum & Glass",
-      title: isRTL ? "هياكل ألمنيوم مخصصة" : "Custom Aluminum Structures",
-      subtitle: isRTL ? "حلول مصممة خصيصاً" : "Tailored Solutions",
-      description: isRTL ? "إطارات مصنوعة حسب الطلب للمشاريع الصناعية والتجارية." : "Tailor-made framework for industrial and commercial projects.",
-      features: isRTL ? ["تصميم مخصص", "إطارات صناعية", "حلول معمارية", "تصنيع دقيق"] : ["Custom Design", "Industrial Frames", "Architectural Solutions", "Precision Fabrication"]
-    },
-
-    // Iron & Steel Fabrication (4 images)
-    {
-      id: 12,
-      image: "https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?w=1920&q=80",
-      category: isRTL ? "الحديد والصلب" : "Iron & Steel",
-      title: isRTL ? "تصنيع الصلب الهيكلي" : "Structural Steel Fabrication",
-      subtitle: isRTL ? "هياكل فائقة التحمل" : "Heavy-Duty Structures",
-      description: isRTL ? "تصميم وتصنيع وتركيب العوارض والأعمدة والإطارات." : "Design, fabrication, and installation of beams and columns.",
-      features: isRTL ? ["عوارض فولاذية", "إطارات صناعية", "تصميم هندسي", "تركيب آمن"] : ["Steel Beams", "Industrial Frames", "Engineering Design", "Safe Installation"]
-    },
-    {
-      id: 13,
-      image: "https://images.pexels.com/photos/8961230/pexels-photo-8961230.jpeg?w=1920&q=80",
-      category: isRTL ? "الحديد والصلب" : "Iron & Steel",
-      title: isRTL ? "مظلات حديدية" : "Iron Canopies",
-      subtitle: isRTL ? "حلول ظل متينة" : "Durable Shade",
-      description: isRTL ? "حلول ظل متينة وجذابة للمناطق الخارجية والممرات." : "Durable and visually appealing shading solutions for outdoor areas.",
-      features: isRTL ? ["مظلات خارجية", "معلقات ظل", "تصميم جمالي", "مقاوم للطقس"] : ["Outdoor Canopies", "Shade Structures", "Aesthetic Design", "Weather Resistant"]
-    },
-    {
-      id: 14,
-      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?w=1920&q=80",
-      category: isRTL ? "الحديد والصلب" : "Iron & Steel",
-      title: isRTL ? "هياكل صلب مخصصة" : "Custom Steel Structures",
-      subtitle: isRTL ? "حلول حسب الطلب" : "Made-to-Order",
-      description: isRTL ? "إطارات فولاذية مصنوعة حسب الطلب للمشاريع المعمارية." : "Tailor-made steel frameworks for architectural projects.",
-      features: isRTL ? ["تصميم مخصص", "تصنيع دقيق", "تطبيقات متعددة", "مواد عالية الجودة"] : ["Custom Design", "Precision Fabrication", "Multiple Applications", "High-Quality Materials"]
-    },
-    {
-      id: 15,
-      image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?w=1920&q=80",
-      category: isRTL ? "الحديد والصلب" : "Iron & Steel",
-      title: isRTL ? "أعمال لحام صناعية" : "Industrial Welding",
-      subtitle: isRTL ? "لحام احترافي" : "Professional Welding",
-      description: isRTL ? "خدمات لحام احترافية للهياكل واسعة النطاق ومكونات الآلات." : "Professional welding services for large-scale structures and machinery.",
-      features: isRTL ? ["لحام معتمد", "تجميع دقيق", "اختبار جودة", "تطبيقات صناعية"] : ["Certified Welding", "Precision Assembly", "Quality Testing", "Industrial Applications"]
-    },
-
-    // Wood Materials & Carpentry (5 images)
-    {
-      id: 16,
-      image: "https://images.pexels.com/photos/5691621/pexels-photo-5691621.jpeg?w=1920&q=80",
-      category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
-      title: isRTL ? "تصنيع أثاث مخصص" : "Custom Furniture",
-      subtitle: isRTL ? "حلول خشبية راقية" : "Premium Wood",
-      description: isRTL ? "تصنيع أثاث مخصص عالي الجودة للمشاريع السكنية والتجارية." : "High-quality custom furniture manufacturing for residential projects.",
-      features: isRTL ? ["أثاث مخصص", "أخشاب صلبة", "براعة فنية", "تشطيبات راقية"] : ["Custom Furniture", "Hardwood Materials", "Expert Craftsmanship", "Premium Finishes"]
-    },
-    {
-      id: 17,
-      image: "https://images.pexels.com/photos/5974054/pexels-photo-5974054.jpeg?w=1920&q=80",
-      category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
-      title: isRTL ? "تجهيزات خشبية" : "Wood Fit-Outs",
-      subtitle: isRTL ? "حلول مكاتب" : "Office Solutions",
-      description: isRTL ? "تجهيزات خشبية داخلية للمكاتب والمساحات التجارية." : "Interior wood fit-outs for offices and commercial spaces.",
-      features: isRTL ? ["تجهيزات مكاتب", "جدران خشبية", "أرفف مخصصة", "تصميم احترافي"] : ["Office Fit-Outs", "Wood Paneling", "Custom Shelving", "Professional Design"]
-    },
+    
+    
     {
       id: 18,
-      image: "https://images.pexels.com/photos/5974256/pexels-photo-5974256.jpeg?w=1920&q=80",
+      image: "https://images.pexels.com/photos/8142055/pexels-photo-8142055.jpeg?w=1920&q=80",
       category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
       title: isRTL ? "خزائن وخزانات" : "Cabinets & Wardrobes",
       subtitle: isRTL ? "حلول تخزين" : "Storage Solutions",
       description: isRTL ? "خزائن مطبخ وخزانات وحلول تخزين مصنوعة حسب الطلب." : "Kitchen cabinets, wardrobes, and storage solutions made to order.",
       features: isRTL ? ["خزائن مخصصة", "حلول تخزين", "تشطيبات راقية", "تصميم وظيفي"] : ["Custom Cabinets", "Storage Solutions", "Premium Finishes", "Functional Design"]
     },
-    {
-      id: 19,
-      image: "https://images.pexels.com/photos/8961339/pexels-photo-8961339.jpeg?w=1920&q=80",
-      category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
-      title: isRTL ? "أبواب خشبية" : "Wooden Doors",
-      subtitle: isRTL ? "حرفية تقليدية" : "Traditional Craft",
-      description: isRTL ? "أبواب وإطارات وألواح خشبية مصنوعة بخبرة." : "Expertly crafted wooden doors, frames, and paneling.",
-      features: isRTL ? ["أبواب صلبة", "إطارات مخصصة", "ألواح زخرفية", "تصميم كلاسيكي"] : ["Solid Doors", "Custom Frames", "Decorative Panels", "Classic Design"]
-    },
-    {
-      id: 20,
-      image: "https://images.pexels.com/photos/8090128/pexels-photo-8090128.jpeg?w=1920&q=80",
-      category: isRTL ? "الخشب والنجارة" : "Wood & Carpentry",
-      title: isRTL ? "كسوة خشبية" : "Wood Cladding",
-      subtitle: isRTL ? "ألواح جدران" : "Wall Panels",
-      description: isRTL ? "كسوة خشبية زخرفية وأعمال ألواح جدران للتصميمات الراقية." : "Decorative wood cladding and wall panel works for premium designs.",
-      features: isRTL ? ["ألواح جدران", "كسوة خشبية", "تصاميم مخصصة", "تشطيبات فاخرة"] : ["Wall Panels", "Wood Cladding", "Custom Designs", "Luxury Finishes"]
-    },
+   
+  
 
     // Gypsum & Ceiling Works (5 images)
-    {
-      id: 21,
-      image: "https://images.pexels.com/photos/6760818/pexels-photo-6760818.jpeg?w=1920&q=80",
-      category: isRTL ? "الجبس والأسقف" : "Gypsum & Ceiling",
-      title: isRTL ? "تركيب أسقف مستعارة" : "False Ceiling Installation",
-      subtitle: isRTL ? "أسقف وظيفية" : "Functional Ceilings",
-      description: isRTL ? "أسقف زخرفية ووظيفية للمشاريع السكنية والتجارية." : "Decorative and functional ceilings for residential projects.",
-      features: isRTL ? ["أسقف حديثة", "تركيب احترافي", "تصاميم مخصصة", "إضاءة متكاملة"] : ["Modern Ceilings", "Professional Installation", "Custom Designs", "Integrated Lighting"]
-    },
-    {
-      id: 22,
-      image: "https://images.pexels.com/photos/5691608/pexels-photo-5691608.jpeg?w=1920&q=80",
-      category: isRTL ? "الجبس والأسقف" : "Gypsum & Ceiling",
-      title: isRTL ? "فواصل جبسية" : "Gypsum Partitions",
-      subtitle: isRTL ? "جدران مرنة" : "Flexible Walls",
-      description: isRTL ? "جدران تقسيم مرنة وجمالية للمكاتب والمنازل." : "Flexible and aesthetic partition walls for offices and homes.",
-      features: isRTL ? ["تقسيمات مكاتب", "جدران خفيفة", "تركيب سريع", "عازل للصوت"] : ["Office Partitions", "Lightweight Walls", "Quick Installation", "Sound Insulation"]
-    },
-    {
-      id: 23,
-      image: "https://images.pexels.com/photos/8293778/pexels-photo-8293778.jpeg?w=1920&q=80",
-      category: isRTL ? "الجبس والأسقف" : "Gypsum & Ceiling",
-      title: isRTL ? "تصاميم زخرفية" : "Decorative Designs",
-      subtitle: isRTL ? "أنماط فنية" : "Artistic Patterns",
-      description: isRTL ? "أنماط وأنسجة ورسومات أسقف حديثة وفنية." : "Modern and artistic ceiling patterns, textures, and motifs.",
-      features: isRTL ? ["تصاميم مخصصة", "أنماط معقدة", "تشطيبات فنية", "تأثيرات إضاءة"] : ["Custom Designs", "Intricate Patterns", "Artistic Finishes", "Lighting Effects"]
-    },
-    {
-      id: 24,
-      image: "https://images.pexels.com/photos/5691589/pexels-photo-5691589.jpeg?w=1920&q=80",
-      category: isRTL ? "الجبس والأسقف" : "Gypsum & Ceiling",
-      title: isRTL ? "تشطيب وتفصيل" : "Finishing & Detailing",
-      subtitle: isRTL ? "تشطيب سلس" : "Seamless Finish",
-      description: isRTL ? "تشطيب مفاصل سلس وإعداد الطلاء وتنعيم السطح." : "Seamless joint finishing, painting preparation, and smoothening.",
-      features: isRTL ? ["مفاصل سلسة", "سطح أملس", "جاهز للطلاء", "تشطيب احترافي"] : ["Seamless Joints", "Smooth Surface", "Paint Ready", "Professional Finish"]
-    },
-    {
-      id: 25,
-      image: "https://images.pexels.com/photos/6419121/pexels-photo-6419121.jpeg?w=1920&q=80",
-      category: isRTL ? "الجبس والأسقف" : "Gypsum & Ceiling",
-      title: isRTL ? "أسقف صوتية" : "Acoustic Ceilings",
-      subtitle: isRTL ? "عزل صوتي" : "Sound Insulation",
-      description: isRTL ? "تكامل عزل الصوت والحرارة للراحة وكفاءة الطاقة." : "Soundproofing and thermal insulation for comfort and efficiency.",
-      features: isRTL ? ["عازل للصوت", "عزل حراري", "موفر للطاقة", "راحة محسنة"] : ["Soundproofing", "Thermal Insulation", "Energy Efficient", "Enhanced Comfort"]
-    },
-
-    // HVAC Systems (4 images)
-    {
-      id: 26,
-      image: "https://images.pexels.com/photos/8961301/pexels-photo-8961301.jpeg?w=1920&q=80",
-      category: isRTL ? "أنظمة التكييف" : "HVAC Systems",
-      title: isRTL ? "تصنيع مجاري الهواء" : "AC Duct Fabrication",
-      subtitle: isRTL ? "توزيع هواء مخصص" : "Custom Air Distribution",
-      description: isRTL ? "تصنيع مخصص لمجاري GI والألمنيوم المعزولة مسبقاً." : "Custom fabrication of GI, pre-insulated, and aluminum ductwork.",
-      features: isRTL ? ["مجاري مخصصة", "عزل فعال", "تركيب محكم", "تدفق مثالي"] : ["Custom Ducts", "Efficient Insulation", "Leak-Free Installation", "Optimal Airflow"]
-    },
-    {
-      id: 27,
-      image: "https://images.pexels.com/photos/8961372/pexels-photo-8961372.jpeg?w=1920&q=80",
-      category: isRTL ? "أنظمة التكييف" : "HVAC Systems",
-      title: isRTL ? "أنظمة العادم" : "Exhaust Systems",
-      subtitle: isRTL ? "تهوية صناعية" : "Industrial Ventilation",
-      description: isRTL ? "تصميم وتركيب أنظمة عادم المطابخ والعادم الصناعي." : "Design and installation of kitchen and industrial exhaust systems.",
-      features: isRTL ? ["عادم المطابخ", "تهوية صناعية", "استخلاص الدخان", "هواء نقي"] : ["Kitchen Exhaust", "Industrial Ventilation", "Smoke Extraction", "Fresh Air"]
-    },
-    {
-      id: 28,
-      image: "https://images.pexels.com/photos/5474298/pexels-photo-5474298.jpeg?w=1920&q=80",
-      category: isRTL ? "أنظمة التكييف" : "HVAC Systems",
-      title: isRTL ? "صيانة التكييف" : "HVAC Maintenance",
-      subtitle: isRTL ? "صيانة وقائية" : "Preventive Care",
-      description: isRTL ? "برامج صيانة وقائية لإطالة عمر النظام مع الدعم الطارئ." : "Preventive maintenance programs to extend system life with support.",
-      features: isRTL ? ["صيانة دورية", "دعم طارئ", "تنظيف الأنظمة", "ضبط الأداء"] : ["Regular Maintenance", "Emergency Support", "System Cleaning", "Performance Tuning"]
-    },
-    {
-      id: 29,
-      image: "https://images.pexels.com/photos/5474041/pexels-photo-5474041.jpeg?w=1920&q=80",
-      category: isRTL ? "أنظمة التكييف" : "HVAC Systems",
-      title: isRTL ? "ملحقات التكييف" : "HVAC Accessories",
-      subtitle: isRTL ? "ديفيوزرز وشبكات" : "Diffusers & Grilles",
-      description: isRTL ? "توريد وتركيب المثبطات والديفيوزرز والشبكات." : "Supply and installation of dampers, diffusers, and grilles.",
-      features: isRTL ? ["ديفيوزرات هواء", "شبكات تهوية", "مثبطات تحكم", "فتحات خارجية"] : ["Air Diffusers", "Ventilation Grilles", "Control Dampers", "Exterior Louvers"]
-    },
-
-    // Electrical & Low Voltage Systems (5 images)
-    {
-      id: 30,
-      image: "https://images.pexels.com/photos/5474028/pexels-photo-5474028.jpeg?w=1920&q=80",
-      category: isRTL ? "الأنظمة الكهربائية" : "Electrical Systems",
-      title: isRTL ? "التركيبات الكهربائية" : "Electrical Installations",
-      subtitle: isRTL ? "توزيع طاقة كامل" : "Power Distribution",
-      description: isRTL ? "أنظمة توزيع طاقة كاملة للمباني والمنشآت." : "Complete power distribution systems for buildings and facilities.",
-      features: isRTL ? ["توزيع طاقة", "لوحات كهربائية", "أسلاك داخلية", "أنظمة إضاءة"] : ["Power Distribution", "Distribution Boards", "Internal Wiring", "Lighting Systems"]
-    },
-    {
-      id: 31,
-      image: "https://images.pexels.com/photos/5474021/pexels-photo-5474021.jpeg?w=1920&q=80",
-      category: isRTL ? "الأنظمة الكهربائية" : "Electrical Systems",
-      title: isRTL ? "أنظمة الجهد المنخفض" : "Low Voltage Systems",
-      subtitle: isRTL ? "كابلات منظمة" : "Structured Cabling",
-      description: isRTL ? "أنظمة كابلات منظمة وCCTV والتحكم في الوصول." : "Structured cabling systems, CCTV surveillance, and access control.",
-      features: isRTL ? ["كابلات منظمة", "CCTV", "التحكم في الوصول", "أنظمة بيانات"] : ["Structured Cabling", "CCTV Systems", "Access Control", "Data Systems"]
-    },
-    {
-      id: 32,
-      image: "https://images.pexels.com/photos/5691653/pexels-photo-5691653.jpeg?w=1920&q=80",
-      category: isRTL ? "الأنظمة الكهربائية" : "Electrical Systems",
-      title: isRTL ? "أنظمة إنذار الحريق" : "Fire Alarm Systems",
-      subtitle: isRTL ? "كشف وإنذار" : "Detection & Alert",
-      description: isRTL ? "تصميم وتركيب أنظمة إنذار الحريق وكواشف الدخان." : "Fire alarm system design and installation with smoke detectors.",
-      features: isRTL ? ["كشف الحريق", "كواشف دخان", "إنذارات طوارئ", "تكامل السلامة"] : ["Fire Detection", "Smoke Detectors", "Emergency Alarms", "Safety Integration"]
-    },
-    {
-      id: 33,
-      image: "https://images.pexels.com/photos/8961345/pexels-photo-8961345.jpeg?w=1920&q=80",
-      category: isRTL ? "الأنظمة الكهربائية" : "Electrical Systems",
-      title: isRTL ? "طاقة طوارئ" : "Emergency Power",
-      subtitle: isRTL ? "حماية من انقطاع" : "Power Protection",
-      description: isRTL ? "أنظمة إضاءة طوارئ وUPS وتوزيع طاقة احتياطية." : "Emergency lighting systems, UPS systems, and backup power.",
-      features: isRTL ? ["إضاءة طوارئ", "أنظمة UPS", "طاقة احتياطية", "حماية مستمرة"] : ["Emergency Lighting", "UPS Systems", "Backup Power", "Continuous Protection"]
-    },
-    {
-      id: 34,
-      image: "https://images.pexels.com/photos/8961357/pexels-photo-8961357.jpeg?w=1920&q=80",
-      category: isRTL ? "الأنظمة الكهربائية" : "Electrical Systems",
-      title: isRTL ? "اختبار وتشغيل" : "Testing & Commissioning",
-      subtitle: isRTL ? "ضمان الجودة" : "Quality Assurance",
-      description: isRTL ? "تحليل الحمولة الشامل والاختبار والتشغيل لجميع الأنظمة." : "Comprehensive load analysis, testing, and commissioning for all systems.",
-      features: isRTL ? ["تحليل الحمولة", "اختبار النظام", "فحص الجودة", "تشغيل كامل"] : ["Load Analysis", "System Testing", "Quality Inspection", "Full Commissioning"]
-    }
+   
+    
   ];
 
   // Auto-play functionality
