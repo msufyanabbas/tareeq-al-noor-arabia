@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Menu, X, Phone, ArrowRight, Globe, ChevronDown, Sparkles, ShoppingBag } from 'lucide-react';
+import { Menu, X, Phone, ArrowRight, Globe, ChevronDown, Sparkles, ShoppingBag, Package } from 'lucide-react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
@@ -226,7 +226,7 @@ const Header = () => {
           {/* Desktop Navigation - Modern clean design */}
           <div className="hidden lg:flex items-center justify-center flex-1 px-8">
             <div className={`flex items-center ${
-              isRTL ? 'space-x-reverse space-x-8' : 'space-x-8'
+              isRTL ? 'space-x-reverse space-x-6' : 'space-x-6'
             }`}>
               {navigationItems.map((item, index) => {
                 const isActive = isActiveRoute(item.href);
@@ -302,6 +302,32 @@ const Header = () => {
                   </div>
                 );
               })}
+
+              {/* PROMINENT MATERIAL SUPPLY BUTTON */}
+              <Link
+                href="/material-supply"
+                className={`relative group overflow-hidden rounded-lg transition-all duration-300 ${
+                  isActiveRoute('/material-supply')
+                    ? 'bg-gradient-to-r from-[#eaae07] to-[#d49b06] shadow-lg scale-105'
+                    : 'bg-gradient-to-r from-[#eaae07]/90 to-[#d49b06]/90 hover:from-[#eaae07] hover:to-[#d49b06] hover:shadow-lg hover:scale-105'
+                }`}
+              >
+                {/* Animated background shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                
+                <div className="relative flex items-center gap-2 px-4 py-2.5">
+                  <Package className="w-5 h-5 text-[#02496a]" />
+                  <span className={`text-sm font-bold text-[#02496a] ${getTextClasses()}`}>
+                    {isRTL ? 'توريد المواد' : 'Material Supply'}
+                  </span>
+                  <Sparkles className="w-4 h-4 text-[#02496a] animate-pulse" />
+                </div>
+
+                {/* Pulse effect on active */}
+                {isActiveRoute('/material-supply') && (
+                  <div className="absolute inset-0 rounded-lg animate-ping opacity-20 bg-[#eaae07]"></div>
+                )}
+              </Link>
             </div>
           </div>
 
@@ -317,7 +343,7 @@ const Header = () => {
             {/* Call to Action Button */}
             <Link 
               href="/contact" 
-              className="bg-[#eaae07] text-[#02496a] px-6 py-2 rounded-lg font-bold hover:bg-[#d49b06] transition-colors duration-300 text-sm"
+              className="bg-white/10 text-white border border-white/20 px-6 py-2 rounded-lg font-bold hover:bg-white/20 transition-colors duration-300 text-sm backdrop-blur-sm"
             >
               {t('common.contactUs')}
             </Link>
@@ -366,6 +392,47 @@ const Header = () => {
           <div className="bg-white border-t border-[#eaae07] shadow-xl rounded-b-lg mx-1 relative z-50">
             <div className="px-4 py-4">
               
+              {/* PROMINENT MOBILE MATERIAL SUPPLY CARD - Placed at top */}
+              <Link
+                href="/material-supply"
+                className={`block mb-4 relative group overflow-hidden rounded-xl transition-all duration-300 ${
+                  isActiveRoute('/material-supply')
+                    ? 'bg-gradient-to-r from-[#eaae07] to-[#d49b06] shadow-xl ring-2 ring-[#eaae07]/50'
+                    : 'bg-gradient-to-r from-[#eaae07]/90 to-[#d49b06]/90 hover:from-[#eaae07] hover:to-[#d49b06] hover:shadow-lg'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {/* Animated background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                
+                <div className="relative p-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-[#02496a] p-2.5 rounded-lg">
+                        <Package className="w-6 h-6 text-[#eaae07]" />
+                      </div>
+                      <div>
+                        <div className={`text-lg font-bold text-[#02496a] ${getHeadingClasses()}`}>
+                          {isRTL ? 'توريد المواد' : 'Material Supply'}
+                        </div>
+                        <div className="text-sm text-[#02496a]/80 font-medium">
+                          {isRTL ? 'اطلب مواد البناء الآن' : 'Order Construction Materials'}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-1">
+                      <Sparkles className="w-5 h-5 text-[#02496a] animate-pulse" />
+                      <ArrowRight className={`w-4 h-4 text-[#02496a] ${isRTL ? 'rotate-180' : ''}`} />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Pulse effect on active */}
+                {isActiveRoute('/material-supply') && (
+                  <div className="absolute inset-0 rounded-xl animate-ping opacity-20 bg-[#eaae07]"></div>
+                )}
+              </Link>
+
               {/* Mobile Navigation */}
               <div className="flex flex-col space-y-1 mb-4">
                 {navigationItems.map((item, index) => {
@@ -440,7 +507,7 @@ const Header = () => {
               <div className="border-t border-gray-200 pt-4">
                 <Link 
                   href="/contact" 
-                  className="w-full bg-[#eaae07] text-[#02496a] py-3 px-4 rounded-lg font-bold hover:bg-[#d49b06] transition-colors duration-300 text-center block text-base"
+                  className="w-full bg-[#02496a] text-white border-2 border-[#02496a] py-3 px-4 rounded-lg font-bold hover:bg-[#023d54] transition-colors duration-300 text-center block text-base"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {t('common.contactUs')}
